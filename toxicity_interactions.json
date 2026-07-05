@@ -1,0 +1,32 @@
+[
+  {
+    "pair": "\u0130traconazol + (statin / everolimus / celecoxib / bir\u00e7ok ila\u00e7)",
+    "type": "CYP3A4 inhibisyonu",
+    "effect": "\u0130traconazol G\u00dc\u00c7L\u00dc CYP3A4 inhibit\u00f6r\u00fcd\u00fcr \u2192 bu enzimle y\u0131k\u0131lan ila\u00e7lar\u0131n kan d\u00fczeyini tehlikeli bi\u00e7imde y\u00fckseltir. Atorvastatin ile birlikte rabdomiyoliz riski; everolimus d\u00fczeyini a\u015f\u0131r\u0131 y\u00fckseltir.",
+    "grade": "Y\u00fcksek \u2014 FDA kara kutu etkile\u015fim uyar\u0131s\u0131"
+  },
+  {
+    "pair": "Valproik asit + (temozolomid / lomustin)",
+    "type": "Additif miyelosupresyon + hepatotoksisite",
+    "effect": "Valproik asit trombositopeni ve hepatotoksisiteyi alkilleyicilerin kemik ili\u011fi/karaci\u011fer etkisine ekler.",
+    "grade": "Orta-y\u00fcksek"
+  },
+  {
+    "pair": "Hidroksiklorokin + \u0130traconazol",
+    "type": "Additif QT uzamas\u0131",
+    "effect": "\u0130kisi de QT uzat\u0131r \u2192 ventrik\u00fcler aritmi riski artar.",
+    "grade": "Orta-y\u00fcksek"
+  },
+  {
+    "pair": "Celecoxib + Bevacizumab + Regorafenib",
+    "type": "Additif G\u0130S kanama/perforasyon",
+    "effect": "\u00dc\u00e7\u00fc de G\u0130S mukoza/damar b\u00fct\u00fcnl\u00fc\u011f\u00fcn\u00fc bozar; birlikte perforasyon riski belirgin.",
+    "grade": "Y\u00fcksek"
+  },
+  {
+    "pair": "Alkilleyici (TMZ/CCNU) + WEE1/ATR inhibit\u00f6r\u00fc",
+    "type": "Hedeflenen sinerji = additif toksisite",
+    "effect": "Tedavi mant\u0131\u011f\u0131n\u0131n kendisi (DNA hasar\u0131 + kontrol noktas\u0131 kald\u0131rma) sa\u011fl\u0131kl\u0131 b\u00f6l\u00fcnen dokular\u0131 da vurur \u2192 a\u011f\u0131r miyelosupresyon. Bu y\u00fczden deneme dozlar\u0131 d\u00fc\u015f\u00fck ve aral\u0131kl\u0131d\u0131r.",
+    "grade": "Y\u00fcksek (doz-k\u0131s\u0131tlay\u0131c\u0131)"
+  }
+]

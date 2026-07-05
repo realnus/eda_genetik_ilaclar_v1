@@ -1,0 +1,185 @@
+{
+  "6-thio-dG": {
+    "nodes": [
+      "V1_TERT::telomerase-catalytic"
+    ],
+    "sole_provider_of": [
+      "V1_TERT::telomerase-catalytic"
+    ],
+    "shared_nodes": [],
+    "status": "BENZERSIZ"
+  },
+  "ATR inhibit\u00f6r\u00fc": {
+    "nodes": [
+      "V1_TERT::telomere-replication-stress(ATR)",
+      "V2_TP53::ATR-replication-stress"
+    ],
+    "sole_provider_of": [
+      "V1_TERT::telomere-replication-stress(ATR)",
+      "V2_TP53::ATR-replication-stress"
+    ],
+    "shared_nodes": [],
+    "status": "BENZERSIZ"
+  },
+  "WEE1 inhibit\u00f6r\u00fc": {
+    "nodes": [
+      "V2_TP53::WEE1-G2/M"
+    ],
+    "sole_provider_of": [
+      "V2_TP53::WEE1-G2/M"
+    ],
+    "shared_nodes": [],
+    "status": "BENZERSIZ"
+  },
+  "Mebendazol": {
+    "nodes": [
+      "V2_TP53::mitotik-mikrot\u00fcb\u00fcl"
+    ],
+    "sole_provider_of": [
+      "V2_TP53::mitotik-mikrot\u00fcb\u00fcl"
+    ],
+    "shared_nodes": [],
+    "status": "BENZERSIZ"
+  },
+  "Valproik asit": {
+    "nodes": [
+      "V2_TP53::HDAC/kromatin",
+      "V5_MGMT::HDAC-duyarl\u0131la\u015ft\u0131rma"
+    ],
+    "sole_provider_of": [
+      "V2_TP53::HDAC/kromatin",
+      "V5_MGMT::HDAC-duyarl\u0131la\u015ft\u0131rma"
+    ],
+    "shared_nodes": [],
+    "status": "BENZERSIZ"
+  },
+  "Paxalisib": {
+    "nodes": [
+      "V3_PTEN_PI3K::PI3K/mTOR-direkt"
+    ],
+    "sole_provider_of": [],
+    "shared_nodes": [
+      "V3_PTEN_PI3K::PI3K/mTOR-direkt"
+    ],
+    "status": "TEKRAR ADAYI"
+  },
+  "Everolimus": {
+    "nodes": [
+      "V3_PTEN_PI3K::PI3K/mTOR-direkt"
+    ],
+    "sole_provider_of": [],
+    "shared_nodes": [
+      "V3_PTEN_PI3K::PI3K/mTOR-direkt"
+    ],
+    "status": "TEKRAR ADAYI"
+  },
+  "Metformin": {
+    "nodes": [
+      "V3_PTEN_PI3K::AMPK\u2192mTOR-dolayl\u0131",
+      "V7_METABOLIC::OXPHOS/kompleks-I"
+    ],
+    "sole_provider_of": [
+      "V3_PTEN_PI3K::AMPK\u2192mTOR-dolayl\u0131",
+      "V7_METABOLIC::OXPHOS/kompleks-I"
+    ],
+    "shared_nodes": [],
+    "status": "BENZERSIZ"
+  },
+  "Regorafenib": {
+    "nodes": [
+      "V3_PTEN_PI3K::multikinaz",
+      "V8_IMMUNE::anti-anjiyogenez"
+    ],
+    "sole_provider_of": [
+      "V3_PTEN_PI3K::multikinaz"
+    ],
+    "shared_nodes": [
+      "V8_IMMUNE::anti-anjiyogenez"
+    ],
+    "status": "BENZERSIZ"
+  },
+  "Celecoxib": {
+    "nodes": [
+      "V4_NFKB::COX2/PGE2\u2192NF-\u03baB",
+      "V6_WNT_TCF7L2::COX/Wnt-\u03b2-katenin",
+      "V8_IMMUNE::COX2/PGE2-myeloid"
+    ],
+    "sole_provider_of": [
+      "V4_NFKB::COX2/PGE2\u2192NF-\u03baB",
+      "V6_WNT_TCF7L2::COX/Wnt-\u03b2-katenin",
+      "V8_IMMUNE::COX2/PGE2-myeloid"
+    ],
+    "shared_nodes": [],
+    "status": "BENZERSIZ"
+  },
+  "Hidroksiklorokin": {
+    "nodes": [
+      "V4_NFKB::otofaji/lizozom",
+      "V7_METABOLIC::otofaji/lizozom"
+    ],
+    "sole_provider_of": [
+      "V4_NFKB::otofaji/lizozom"
+    ],
+    "shared_nodes": [
+      "V7_METABOLIC::otofaji/lizozom"
+    ],
+    "status": "BENZERSIZ"
+  },
+  "Temozolomid": {
+    "nodes": [
+      "V5_MGMT::alkilleyici-DNA-hasar\u0131"
+    ],
+    "sole_provider_of": [],
+    "shared_nodes": [
+      "V5_MGMT::alkilleyici-DNA-hasar\u0131"
+    ],
+    "status": "TEKRAR ADAYI"
+  },
+  "Lomustin": {
+    "nodes": [
+      "V5_MGMT::alkilleyici-DNA-hasar\u0131"
+    ],
+    "sole_provider_of": [],
+    "shared_nodes": [
+      "V5_MGMT::alkilleyici-DNA-hasar\u0131"
+    ],
+    "status": "TEKRAR ADAYI"
+  },
+  "Atorvastatin": {
+    "nodes": [
+      "V7_METABOLIC::mevalonat/kolesterol"
+    ],
+    "sole_provider_of": [
+      "V7_METABOLIC::mevalonat/kolesterol"
+    ],
+    "shared_nodes": [],
+    "status": "BENZERSIZ"
+  },
+  "\u0130traconazol": {
+    "nodes": [
+      "V7_METABOLIC::otofaji/lizozom",
+      "V7_METABOLIC::anti-anjiyogenez/damar",
+      "V8_IMMUNE::anti-anjiyogenez"
+    ],
+    "sole_provider_of": [],
+    "shared_nodes": [
+      "V7_METABOLIC::otofaji/lizozom",
+      "V7_METABOLIC::anti-anjiyogenez/damar",
+      "V8_IMMUNE::anti-anjiyogenez"
+    ],
+    "status": "TEKRAR ADAYI"
+  },
+  "Bevacizumab": {
+    "nodes": [
+      "V7_METABOLIC::anti-anjiyogenez/damar",
+      "V8_IMMUNE::VEGF/damar-normalizasyonu"
+    ],
+    "sole_provider_of": [
+      "V8_IMMUNE::VEGF/damar-normalizasyonu"
+    ],
+    "shared_nodes": [
+      "V7_METABOLIC::anti-anjiyogenez/damar"
+    ],
+    "status": "BENZERSIZ"
+  }
+}

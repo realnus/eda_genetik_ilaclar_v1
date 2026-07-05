@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Regimen A \u2014 Repurposing backbone (pharmacy-accessible)",
+    "philosophy": "All-generic, all oral, BBB-permeable. Simultaneously dampens NF-kB survival, PI3K/mTOR growth, metabolic/autophagy escape. Lowest access barrier; can be layered onto standard care with oncologist supervision.",
+    "drugs": [
+      "Metformin",
+      "Disulfiram + copper",
+      "Chloroquine/Hydroxychloroquine",
+      "Atorvastatin",
+      "Celecoxib"
+    ],
+    "vulns_hit": [
+      "V3_PTEN_PI3K",
+      "V4_NFKB",
+      "V7_METABOLIC",
+      "V8_IMMUNE"
+    ],
+    "precedent": "CUSP9* protocol (NCT02770378) \u2014 feasibility/safety demonstrated; DIRECT disulfiram trial (NCT02678975)",
+    "gaps": "Does NOT directly hit p53-null G2/M dependency (V2) or telomere axis (V1). Cytostatic-leaning."
+  },
+  {
+    "name": "Regimen B \u2014 Targeted synthetic-lethal core (needs onc/trial access)",
+    "philosophy": "Exploits the truncal p53 loss: with G1/S checkpoint gone, force cells through mitosis with unrepaired damage. Pair a brain-penetrant PI3K/mTOR inhibitor with a G2/M-checkpoint inhibitor.",
+    "drugs": [
+      "Paxalisib (PI3K/mTOR)",
+      "Adavosertib (WEE1) or ATR inhibitor",
+      "+ alkylator/RT as the DNA-damage source"
+    ],
+    "vulns_hit": [
+      "V2_TP53",
+      "V3_PTEN_PI3K",
+      "V1_TERT"
+    ],
+    "precedent": "Paxalisib GBM AGILE (NCT03970447); AZD1775/adavosertib GBM Phase 0/1 (NCT02207010, NCT01849146)",
+    "gaps": "Access-limited; overlapping myelosuppression risk requires careful dosing."
+  },
+  {
+    "name": "Regimen C \u2014 Integrated (backbone + one targeted anchor)",
+    "philosophy": "Realistic 'best of both': the generic backbone for broad pathway suppression PLUS one accessible targeted anchor (metformin+paxalisib+ketogenic metabolic pressure), mirroring an actual trial design.",
+    "drugs": [
+      "Paxalisib",
+      "Metformin",
+      "(ketogenic metabolic pressure)",
+      "Disulfiram+Cu",
+      "Chloroquine"
+    ],
+    "vulns_hit": [
+      "V2_TP53",
+      "V3_PTEN_PI3K",
+      "V4_NFKB",
+      "V7_METABOLIC"
+    ],
+    "precedent": "Paxalisib + ketogenic diet + metformin trial (NCT05183204) \u2014 direct real-world analog of this exact combination",
+    "gaps": "Drug-drug interaction & tolerability load; requires active oncologist management."
+  }
+]

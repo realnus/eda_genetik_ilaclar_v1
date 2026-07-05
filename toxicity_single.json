@@ -1,0 +1,130 @@
+[
+  {
+    "drug": "Metformin",
+    "track": "F",
+    "boxed": "LAKT\u0130K AS\u0130DOZ (kara kutu)",
+    "key": "Laktik asidoz (nadir ama \u00f6l\u00fcmc\u00fcl olabilir); B12 eksikli\u011fi; G\u0130S intolerans\u0131 (bulant\u0131, ishal)",
+    "monitor": "B\u00f6brek fonksiyonu (eGFR), kontrastl\u0131 g\u00f6r\u00fcnt\u00fclemede kesme",
+    "source": "FDA boxed warning"
+  },
+  {
+    "drug": "Atorvastatin",
+    "track": "F",
+    "boxed": "\u2014",
+    "key": "Miyopati / rabdomiyoliz (kas y\u0131k\u0131m\u0131 \u2192 b\u00f6brek hasar\u0131); karaci\u011fer enzim y\u00fcksekli\u011fi; hiperglisemi",
+    "monitor": "CK (kas a\u011fr\u0131s\u0131nda), karaci\u011fer enzimleri",
+    "source": "FDA warnings & precautions"
+  },
+  {
+    "drug": "Hidroksiklorokin / Klorokin",
+    "track": "F",
+    "boxed": "\u2014",
+    "key": "Geri d\u00f6n\u00fc\u015fs\u00fcz RET\u0130NA toksisitesi (k\u00fcm\u00fclatif doza ba\u011fl\u0131); kardiyomiyopati & ventrik\u00fcler aritmi; QT uzamas\u0131; ciddi cilt reaksiyonlar\u0131 (SJS/TEN)",
+    "monitor": "Bazal + periyodik g\u00f6z muayenesi; EKG (QT)",
+    "source": "FDA warnings & precautions"
+  },
+  {
+    "drug": "Celecoxib",
+    "track": "F",
+    "boxed": "KARD\u0130YOVASK\u00dcLER & G\u0130S (kara kutu)",
+    "key": "Kalp krizi/inme riski (NSA\u0130\u0130); G\u0130S kanama, \u00fclser, perforasyon; b\u00f6brek; CABG cerrahisinde kontrendike",
+    "monitor": "KB, b\u00f6brek fonksiyonu, G\u0130S semptomlar\u0131",
+    "source": "FDA boxed warning"
+  },
+  {
+    "drug": "Mebendazol",
+    "track": "F",
+    "boxed": "\u2014",
+    "key": "Genelde iyi tolere; y\u00fcksek doz/uzun kullan\u0131mda nadir kemik ili\u011fi bask\u0131lanmas\u0131 (n\u00f6tropeni), karaci\u011fer enzim y\u00fcksekli\u011fi",
+    "monitor": "Uzun kullan\u0131mda tam kan say\u0131m\u0131, karaci\u011fer",
+    "source": "FDA label (genel)"
+  },
+  {
+    "drug": "\u0130traconazol",
+    "track": "F",
+    "boxed": "KONJEST\u0130F KALP YETMEZL\u0130\u011e\u0130 & \u0130LA\u00c7 ETK\u0130LE\u015e\u0130MLER\u0130 (kara kutu)",
+    "key": "Negatif inotropik etki \u2192 KKY; G\u00dc\u00c7L\u00dc CYP3A4 \u0130NH\u0130B\u0130T\u00d6R\u00dc (bir\u00e7ok ilac\u0131n kan d\u00fczeyini tehlikeli y\u00fckseltir); karaci\u011fer toksisitesi; QT",
+    "monitor": "Kalp fonksiyonu; T\u00dcM e\u015f-zamanl\u0131 ila\u00e7lar\u0131n CYP3A4 etkile\u015fimi",
+    "source": "FDA boxed warning"
+  },
+  {
+    "drug": "Valproik asit",
+    "track": "F",
+    "boxed": "HEPATOTOKS\u0130S\u0130TE, PANKREAT\u0130T, TERATOJEN\u0130TE (kara kutu)",
+    "key": "\u00d6l\u00fcmc\u00fcl karaci\u011fer yetmezli\u011fi (\u00f6zellikle ilk 6 ay); pankreatit; hiperamonyemi/ensefalopati; trombositopeni; ciddi do\u011fum kusurlar\u0131",
+    "monitor": "Karaci\u011fer testleri (s\u0131k, ilk 6 ay), amonyak, trombosit",
+    "source": "FDA boxed warning"
+  },
+  {
+    "drug": "Temozolomid",
+    "track": "A",
+    "boxed": "\u2014",
+    "key": "M\u0130YELOSUPRESYON (n\u00f6tropeni, trombositopeni); hepatotoksisite (\u00f6l\u00fcmc\u00fcl olabilir); nadir Pneumocystis pn\u00f6monisi",
+    "monitor": "Her siklus \u00f6ncesi tam kan say\u0131m\u0131; karaci\u011fer testleri",
+    "source": "FDA warnings & precautions"
+  },
+  {
+    "drug": "Lomustin (CCNU)",
+    "track": "A",
+    "boxed": "GEC\u0130KM\u0130\u015e M\u0130YELOSUPRESYON & DOZ A\u015eIMI R\u0130SK\u0130 (kara kutu)",
+    "key": "Gecikmi\u015f, k\u00fcm\u00fclatif kemik ili\u011fi bask\u0131lanmas\u0131 (4-6 hafta sonra, \u00f6l\u00fcmc\u00fcl olabilir); trombositopeni l\u00f6kopeniden a\u011f\u0131r; pulmoner toksisite; 6 haftada birden s\u0131k verilmemeli",
+    "monitor": "En az 6 hafta kan say\u0131m\u0131; k\u00fcm\u00fclatif doz",
+    "source": "FDA boxed warning"
+  },
+  {
+    "drug": "Regorafenib",
+    "track": "A",
+    "boxed": "HEPATOTOKS\u0130S\u0130TE (kara kutu)",
+    "key": "A\u011f\u0131r/\u00f6l\u00fcmc\u00fcl karaci\u011fer toksisitesi; el-ayak deri reaksiyonu; hipertansiyon; kanama; G\u0130S perforasyon",
+    "monitor": "Karaci\u011fer fonksiyonu (tedavi \u00f6ncesi + s\u0131ras\u0131nda), KB",
+    "source": "FDA boxed warning"
+  },
+  {
+    "drug": "Bevacizumab",
+    "track": "A",
+    "boxed": "\u2014",
+    "key": "G\u0130S perforasyon & fist\u00fcl; yara iyile\u015fmesi komplikasyonlar\u0131 (cerrahi \u00f6ncesi \u226528 g\u00fcn kesme); kanama; hipertansiyon; protein\u00fcri; tromboemboli",
+    "monitor": "KB, idrar proteini; cerrahi zamanlamas\u0131",
+    "source": "FDA warnings & precautions"
+  },
+  {
+    "drug": "Everolimus",
+    "track": "A",
+    "boxed": "\u2014",
+    "key": "Non-enfeksiy\u00f6z pn\u00f6moni; imm\u00fcnsupresyon \u2192 enfeksiyonlar; a\u011f\u0131z yaralar\u0131; hiperglisemi, hiperlipidemi; anjiyo\u00f6dem (ACE-i ile)",
+    "monitor": "Akci\u011fer semptomlar\u0131, enfeksiyon, glukoz/lipid",
+    "source": "FDA warnings & precautions"
+  },
+  {
+    "drug": "Paxalisib",
+    "track": "T",
+    "boxed": "\u2014 (ara\u015ft\u0131rma ilac\u0131, SPL etiketi yok)",
+    "key": "S\u0131n\u0131f etkisi (PI3K/mTOR): H\u0130PERGL\u0130SEM\u0130 (hedefte etki), a\u011f\u0131z mukoziti, d\u00f6k\u00fcnt\u00fc, ruh hali de\u011fi\u015fiklikleri",
+    "monitor": "Kan \u015fekeri; oral mukoza",
+    "source": "Faz 2 verisi / s\u0131n\u0131f etkisi"
+  },
+  {
+    "drug": "WEE1 inhibit\u00f6r\u00fc (adavosertib/Debio 0123)",
+    "track": "T",
+    "boxed": "\u2014 (ara\u015ft\u0131rma ilac\u0131)",
+    "key": "S\u0131n\u0131f etkisi (DDR-i): M\u0130YELOSUPRESYON (doz k\u0131s\u0131tlay\u0131c\u0131), bulant\u0131/ishal, yorgunluk \u2014 \u00f6zellikle alkilleyici/RT ile birlikte",
+    "monitor": "Tam kan say\u0131m\u0131",
+    "source": "Faz 1/2 verisi / s\u0131n\u0131f etkisi"
+  },
+  {
+    "drug": "ATR inhibit\u00f6r\u00fc (ceralasertib/berzosertib)",
+    "track": "T",
+    "boxed": "\u2014 (ara\u015ft\u0131rma ilac\u0131)",
+    "key": "S\u0131n\u0131f etkisi: miyelosupresyon (anemi, n\u00f6tropeni, trombositopeni), yorgunluk",
+    "monitor": "Tam kan say\u0131m\u0131",
+    "source": "Faz 1/2 verisi / s\u0131n\u0131f etkisi"
+  },
+  {
+    "drug": "6-thio-dG",
+    "track": "T",
+    "boxed": "\u2014 (deneysel, insan verisi \u00e7ok k\u0131s\u0131tl\u0131)",
+    "key": "\u0130nsan g\u00fcvenlik profili hen\u00fcz tan\u0131ml\u0131 de\u011fil; preklinik telomer-hedefli ajan",
+    "monitor": "\u2014",
+    "source": "Preklinik"
+  }
+]

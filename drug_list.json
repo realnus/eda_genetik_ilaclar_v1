@@ -1,0 +1,209 @@
+[
+ {
+  "ilac": "Bevacizumab (Altuzan)",
+  "vuln": "V7,V8",
+  "kanit": "Faz3 recurrent GBM (PFS↑) — 10.1200/jco.2008.19.8721",
+  "bbb": "anti-anjiyogenik (damar hedefi)",
+  "tox": "Hipertansiyon, kanama, GİS perforasyon, yara iyileşmesi",
+  "access": "A (hasta kullanıyor)",
+  "not": "Zaten kullanımda; V7/V8 damar/mikroçevre düğümünü kapsıyor"
+ },
+ {
+  "ilac": "Levetirasetam (Keppra)",
+  "vuln": "— (antiepileptik)",
+  "kanit": "Standart AEİ",
+  "bbb": "CNS-aktif",
+  "tox": "Davranışsal/psikiyatrik, somnolans; PK-sessiz",
+  "access": "A (hasta kullanıyor)",
+  "not": "İlaç etkileşimi minimal; güvenli zemin"
+ },
+ {
+  "ilac": "Lakozamid (Lamide)",
+  "vuln": "— (antiepileptik)",
+  "kanit": "Standart AEİ",
+  "bbb": "CNS-aktif",
+  "tox": "⚠ Kardiyak iletim/PR uzaması → QT-uzatanlarla EKG şartı",
+  "access": "A (hasta kullanıyor)",
+  "not": "HCQ/itraconazol eklenirse bazal+takip EKG"
+ },
+ {
+  "ilac": "Marizomib",
+  "vuln": "V4_NFKB",
+  "kanit": "⭐ İnsan çalışması GBM; beyin-ölçülmüş-iyi (pano skor 86.7)",
+  "bbb": "ölçülmüş-iyi (beyne geçen proteazom inh.)",
+  "tox": "CNS etkileri (ataksi, halüsinasyon, yorgunluk), bulantı",
+  "access": "O/T (yurtdışı onkoloji / deneme)",
+  "not": "⭐ V4 boşluğunu dolduran YENİ aday; beyne geçen ilk proteazom inhibitörlerinden"
+ },
+ {
+  "ilac": "Bortezomib",
+  "vuln": "V4_NFKB",
+  "kanit": "İnsan vaka/retro GBM; beyin-ölçülmüş (pano 71.3)",
+  "bbb": "ölçülmüş-iyi",
+  "tox": "Periferik nöropati (doz-kısıtlayıcı), trombositopeni, herpes reaktivasyonu",
+  "access": "O (yurtdışı onkoloji — myelom onaylı)",
+  "not": "Marizomib alternatifi; nöropati riski daha yüksek"
+ },
+ {
+  "ilac": "Simvastatin",
+  "vuln": "V7_METABOLIC",
+  "kanit": "İnsan vaka/retro; beyin-ölçülmüş-iyi (pano 65.8)",
+  "bbb": "ölçülmüş-iyi (lipofilik statin)",
+  "tox": "Miyopati/rabdomiyoliz (özellikle CYP3A4 etkileşimi), hepatotoksisite; kara kutu YOK (openFDA)",
+  "access": "F (Türkiye repurpose)",
+  "not": "⭐ Atorvastatin YERİNE — beyin geçişi daha iyi; ⚠ itraconazol ile CYP3A4 çakışması"
+ },
+ {
+  "ilac": "Dordaviprone (ONC201)",
+  "vuln": "YENİ eksen (DRD2/ClpP)",
+  "kanit": "⭐ İnsan çalışması GBM; beyin-geçişli (pano EN YÜKSEK 94.0)",
+  "bbb": "ölçülmüş-iyi",
+  "tox": "Genelde iyi tolere; minimal miyelosupresyon (avantaj), yorgunluk",
+  "access": "O/T (yurtdışı; H3K27M'de onaylı yol)",
+  "not": "⭐ Sistemde YOKtu; H3K27M durumu netleştirilmeli — belirleyici"
+ },
+ {
+  "ilac": "Paxalisib",
+  "vuln": "V3_PTEN_PI3K",
+  "kanit": "İnsan çalışması; beyin-ölçülmüş-iyi (pano 80.2)",
+  "bbb": "ölçülmüş-iyi (beyin-penetran PI3K/mTOR)",
+  "tox": "Hiperglisemi (metforminle dengelenir), mukozit, döküntü",
+  "access": "T (deneme — GBM AGILE NCT03970447)",
+  "not": "V3 birincil seçim; doğrulandı"
+ },
+ {
+  "ilac": "Adavosertib (WEE1i)",
+  "vuln": "V2_TP53",
+  "kanit": "İnsan vaka/retro; beyin-ölçülmüş-iyi (pano 81.0)",
+  "bbb": "ölçülmüş-iyi",
+  "tox": "Miyelosupresyon (doz-kısıtlayıcı, alkilleyici ile), bulantı",
+  "access": "T (deneme — NCT05765812 Debio0123 benzeri)",
+  "not": "Sintetik-letal çekirdek; p53-null hedefi; doğrulandı"
+ },
+ {
+  "ilac": "Ceralasertib (ATRi)",
+  "vuln": "V2_TP53",
+  "kanit": "İnsan vaka/retro; beyin-ölçülmüş-iyi (pano 75.2)",
+  "bbb": "ölçülmüş-iyi",
+  "tox": "Miyelosupresyon, anemi",
+  "access": "T (deneme)",
+  "not": "WEE1 alternatifi/tamamlayıcısı"
+ },
+ {
+  "ilac": "6-thio-2-deoxyguanosine",
+  "vuln": "V1_TERT",
+  "kanit": "İnsan vaka/retro; beyin-ölçülmüş (pano 68.0)",
+  "bbb": "ölçülmüş-iyi",
+  "tox": "Deneysel; sınırlı insan güvenlik verisi",
+  "access": "T (deneysel)",
+  "not": "V1 için nadir gerçekçi aday; ateganosine (71.0) benzer"
+ },
+ {
+  "ilac": "Metformin",
+  "vuln": "V7_METABOLIC",
+  "kanit": "İnsan çalışması; beyin-ölçülmüş-iyi (pano 82.4)",
+  "bbb": "ölçülmüş-iyi (br:pl ~0.2-0.4)",
+  "tox": "⚠ Laktik asidoz (kara kutu), GİS",
+  "access": "F (Türkiye repurpose)",
+  "not": "Doz-boşluk GENİŞ (~600-1000×) → sitotoksik değil, metabolik duyarlılaştırıcı/sinerjik"
+ },
+ {
+  "ilac": "Hidroksiklorokin",
+  "vuln": "V4,V7 (otofaji)",
+  "kanit": "Faz1/2 GBM — 10.4161/auto.28984",
+  "bbb": "CNS-aktif (lizozomotropik birikim)",
+  "tox": "⚠ İrreversibl retinopati, QT/kardiyomiyopati (Lamide ile EKG), SJS/TEN",
+  "access": "F (Türkiye repurpose)",
+  "not": "Doz-boşluk SINIRDA; klinik otofaji blokajı değişken"
+ },
+ {
+  "ilac": "Valproik asit",
+  "vuln": "V5_MGMT (HDAC)",
+  "kanit": "HDAC inh.; radyoduyarlılaştırma",
+  "bbb": "CNS-aktif (ölçülmemiş)",
+  "tox": "⚠ Hepatotoksisite (kara kutu), pankreatit, hiperamonyemi",
+  "access": "F (ama ÜÇÜNCÜ AEİ)",
+  "not": "Hasta zaten 2 AEİ kullanıyor → geri planda; nörolog kararı"
+ },
+ {
+  "ilac": "Celecoxib",
+  "vuln": "V8,V4 (COX-2)",
+  "kanit": "CUSP9v3 bileşeni — 10.3390/ph14121241",
+  "bbb": "ölçülmüş-iyi",
+  "tox": "⚠ Kardiyovasküler+GİS (kara kutu)",
+  "access": "F (Türkiye repurpose)",
+  "not": "Doz-boşluk geniş (apoptoz için); COX-2 baskısı nM'de sağlanır"
+ },
+ {
+  "ilac": "Mebendazol",
+  "vuln": "V2-kısmi,V7 (tübülin)",
+  "kanit": "⭐ Faz1 GBM NCT01729260 (COMPLETED)",
+  "bbb": "beyin-penetran (polimorf C; Bai 2015)",
+  "tox": "Karaciğer (yüksek doz), nadir nötropeni",
+  "access": "F (Türkiye repurpose)",
+  "not": "Doz-boşluk EN DAR; en gerçekçi doğrudan repurpose etki; emilim değişken"
+ },
+ {
+  "ilac": "Atorvastatin",
+  "vuln": "V7_METABOLIC",
+  "kanit": "Repurpose statin — 10.1186/s13046-021-02041-2",
+  "bbb": "⚠ ölçülmüş-ZAYIF (pano beklemede)",
+  "tox": "Miyopati/rabdomiyoliz, hepatotoksisite",
+  "access": "F ama → SİMVASTATİNE çevir",
+  "not": "Beyin geçişi zayıf; simvastatin tercih edilmeli"
+ },
+ {
+  "ilac": "İtraconazol",
+  "vuln": "V7,V8",
+  "kanit": "ReDO — 10.3332/ecancer.2015.521",
+  "bbb": "⚠ ZAYIF (P-gp atar; pano beklemede)",
+  "tox": "⚠ KKY (kara kutu), CYP3A4 (en ağır), QT (Lamide riski)",
+  "access": "X (deprioritize)",
+  "not": "Açtığı düğümler zaten kapsanıyor; en ağır etkileşim yükü → çıkarıldı"
+ },
+ {
+  "ilac": "Disulfiram",
+  "vuln": "V4 (proteazom-dolaylı)",
+  "kanit": "⛔ DIRECT randomize NEGATIF — 10.1001/jamanetworkopen.2023.4149",
+  "bbb": "ölçülmüş-zayıf",
+  "tox": "Grade≥3 AE %34 vs %11; nöropati",
+  "access": "X (çıkarıldı)",
+  "not": "⛔ Randomize denemede sağkalım faydası YOK + fazla toksik → önerilmez"
+ },
+ {
+  "ilac": "Temozolomid",
+  "vuln": "V5_MGMT (alkilleyici)",
+  "kanit": "Standart GBM",
+  "bbb": "iyi",
+  "tox": "Miyelosupresyon, hepatotoksisite",
+  "access": "A (Türkiye onkoloji)",
+  "not": "MGMT-metillenmemiş → sınırlı fayda ama omurga ilaç"
+ },
+ {
+  "ilac": "Lomustin",
+  "vuln": "V5_MGMT (alkilleyici)",
+  "kanit": "Rekürren standart — 10.1016/j.ctrv.2020.102029",
+  "bbb": "iyi (lipofilik nitrozüre)",
+  "tox": "⚠ Gecikmeli/kümülatif miyelosupresyon (4-6 hafta, kara kutu)",
+  "access": "A (Türkiye onkoloji)",
+  "not": "Rekürren GBM omurga; her 6 haftada bir"
+ },
+ {
+  "ilac": "Regorafenib",
+  "vuln": "V7,V8 (multikinaz)",
+  "kanit": "REGOMA lomustine üstün — 10.1016/s1470-2045(18)30675-2",
+  "bbb": "orta",
+  "tox": "⚠ Hepatotoksisite (kara kutu), el-ayak sendromu, hipertansiyon",
+  "access": "A (Türkiye onkoloji)",
+  "not": "Bevacizumab ile HT çakışması; V7/V8 zaten kapsalı"
+ },
+ {
+  "ilac": "Everolimus",
+  "vuln": "V3_PTEN_PI3K",
+  "kanit": "mTOR — 10.18632/oncotarget.7961",
+  "bbb": "⚠ ölçülmüş-ZAYIF (pano beklemede)",
+  "tox": "Non-enfeksiyöz pnömoni, enfeksiyon, hiperglisemi",
+  "access": "A/O (off-label)",
+  "not": "Paxalisib yedeği ama beyin geçişi zayıf → paxalisib birincil"
+ }
+]

@@ -1,0 +1,81 @@
+{
+  "rationale": {
+    "truncal_target": "TP53 loss (V2) \u2014 4 variants, VAF ~24-25%, truncal/co-clonal",
+    "logic": "p53 loss abolishes the G1/S checkpoint. The tumor then depends on the G2/M checkpoint (governed by WEE1, and upstream ATR-CHK1) to pause and repair DNA damage before mitosis. Inhibiting that checkpoint WHILE delivering DNA damage (radiation or alkylator) forces cells into mitosis with unrepaired damage -> mitotic catastrophe. This is synthetic lethality: selectively lethal in the p53-deficient background, relatively spared in normal (p53-intact) cells.",
+    "second_hit": "TERT promoter C250T (V1) drives telomere replication stress, which further sensitizes to ATR inhibition.",
+    "penetration": "Paxalisib is engineered brain-penetrant; adavosertib and several ATR inhibitors have documented CNS/tumor exposure."
+  },
+  "primary_evidence": [
+    {
+      "claim": "WEE1 is overexpressed in GBM and is the major G2-checkpoint regulator; its inhibition + DNA damage causes mitotic catastrophe and radiosensitizes GBM in vivo",
+      "ref": "Mir et al., Cancer Cell 2010",
+      "doi": "10.1016/j.ccr.2010.08.011",
+      "grade": "Foundational preclinical"
+    },
+    {
+      "claim": "ATR inhibitors are synthetic-lethal in p53/ATM-deficient tumors",
+      "ref": "Nat Commun 2016",
+      "doi": "10.1038/ncomms13837",
+      "grade": "Preclinical mechanism"
+    },
+    {
+      "claim": "Adavosertib (WEE1i) + radiation feasible in newly diagnosed diffuse glioma (early-phase clinical)",
+      "ref": "Neuro-Oncol Adv 2022",
+      "doi": "10.1093/noajnl/vdac073",
+      "grade": "Clinical (early-phase)"
+    },
+    {
+      "claim": "Paxalisib Phase 2 in newly diagnosed GBM, unmethylated MGMT",
+      "ref": "Wen et al., ASCO 2022",
+      "doi": "10.1200/jco.2022.40.16_suppl.2047",
+      "grade": "Clinical (Phase 2)"
+    },
+    {
+      "claim": "DDR-inhibitor (ATR/CHK1/WEE1) landscape & promise in GBM",
+      "ref": "Neuro-Oncol Adv 2021 review",
+      "doi": "10.1093/noajnl/vdab015",
+      "grade": "Review"
+    }
+  ],
+  "recruiting_trials": [
+    {
+      "nct": "NCT05765812",
+      "name": "Debio 0123 (WEE1 inhibitor) + temozolomide \u00b1 radiotherapy",
+      "phase": "1/2",
+      "status": "RECRUITING",
+      "fit": "IDH-wildtype GBM / Grade III; recurrence-eligible; measurable disease by RANO",
+      "sites": "16 sites \u2014 USA, Spain, Switzerland",
+      "enroll": 116,
+      "completion": "2028-09",
+      "why": "Direct test of the WEE1 arm of this exact strategy in IDH-wt GBM (matches the tumor's IDH status)."
+    },
+    {
+      "nct": "NCT03970447",
+      "name": "GBM AGILE (adaptive platform; paxalisib is an arm)",
+      "phase": "2/3",
+      "status": "RECRUITING",
+      "fit": "Dedicated RECURRENT GBM inclusion arm; KPS>=60; IDH-wt",
+      "sites": "63 sites \u2014 USA, Canada, France, Germany, Australia, Switzerland",
+      "enroll": 2250,
+      "completion": "2028-06",
+      "why": "Largest access route to paxalisib for RECURRENT GBM; adaptive design rotates in the best regimens."
+    },
+    {
+      "nct": "NCT07391215",
+      "name": "5G-PEARL: paxalisib + temozolomide",
+      "phase": "1/2",
+      "status": "RECRUITING",
+      "fit": "Malignant glioma / GBM; age >=16",
+      "sites": "1 site \u2014 United Kingdom",
+      "enroll": 64,
+      "completion": "2029-01",
+      "why": "Paxalisib+TMZ combination; single UK site (access depends on geography)."
+    }
+  ],
+  "safety_sequencing": [
+    "Myelosuppression is the shared dose-limiting toxicity of WEE1/ATR inhibitors + alkylators \u2014 sequencing and dose de-escalation matter.",
+    "WEE1/ATR inhibitors are typically given INTERMITTENTLY around the DNA-damage source (RT/TMZ), not continuously \u2014 the timing is the therapy.",
+    "Paxalisib toxicities: hyperglycemia (on-target PI3K), oral mucositis \u2014 relevant if combining with metformin (which helps glycemia).",
+    "This core is access-limited: the drugs are largely trial-gated. The realistic route is a trial (above) or off-label onc supervision."
+  ]
+}

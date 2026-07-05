@@ -1,0 +1,135 @@
+{
+  "Paxalisib": [
+    {
+      "ref": "Wen et al., paxalisib in newly diagnosed GBM, unmethylated MGMT (Phase 2)",
+      "year": 2022,
+      "doi": "10.1200/jco.2022.40.16_suppl.2047",
+      "type": "Clinical (Phase 2, ASCO)",
+      "note": "Brain-penetrant PI3K/mTOR inhibitor; the pivotal GBM program behind Regimen B/C anchor."
+    }
+  ],
+  "Metformin": [
+    {
+      "ref": "Sato et al., Glioma-initiating cell elimination by metformin (FOXO3/AMPK)",
+      "year": 2012,
+      "doi": "10.5966/sctm.2012-0058",
+      "type": "Preclinical mechanism",
+      "note": "Metformin depletes glioma stem cells via AMPK-FOXO3."
+    },
+    {
+      "ref": "Metformin inhibits growth of human GBM cells & enhances therapy",
+      "year": 2015,
+      "doi": "10.1371/journal.pone.0123721",
+      "type": "Preclinical",
+      "note": "Supports metformin as a chemo/RT sensitizer in GBM."
+    }
+  ],
+  "Chloroquine/HCQ": [
+    {
+      "ref": "Phase I/II hydroxychloroquine + RT/TMZ in newly diagnosed GBM",
+      "year": 2014,
+      "doi": "10.4161/auto.28984",
+      "type": "Clinical (Phase I/II)",
+      "note": "Autophagy inhibition; defined tolerable HCQ dose with chemoradiation (dose-limiting toxicity noted)."
+    }
+  ],
+  "Atorvastatin": [
+    {
+      "ref": "Anticancer effects of mevalonate-pathway modulation in GBM (in vitro/in vivo)",
+      "year": 2014,
+      "doi": "10.1038/bjc.2014.431",
+      "type": "Preclinical",
+      "note": "Statin/mevalonate blockade rationale in glioma."
+    }
+  ],
+  "Celecoxib": [
+    {
+      "ref": "CUSP9* protocol for recurrent GBM (celecoxib is a component)",
+      "year": 2014,
+      "doi": "10.18632/oncotarget.2408",
+      "type": "Protocol / rationale",
+      "note": "Celecoxib as one of 9 repurposed drugs in the multi-target CUSP9 design."
+    }
+  ],
+  "Mebendazole": [
+    {
+      "ref": "Antiparasitic mebendazole shows survival benefit in 2 preclinical GBM models",
+      "year": 2011,
+      "doi": "10.1093/neuonc/nor077",
+      "type": "Preclinical",
+      "note": "Foundational GBM efficacy signal that launched clinical interest (JHU)."
+    }
+  ],
+  "Valproic acid": [
+    {
+      "ref": "Postradiation sensitization by HDAC inhibitor valproic acid",
+      "year": 2008,
+      "doi": "10.1158/1078-0432.ccr-08-0643",
+      "type": "Preclinical (radiosensitization)",
+      "note": "HDAC-i radiosensitization; clinical GBM data later mixed \u2014 interpret cautiously."
+    }
+  ],
+  "Adavosertib(WEE1)": [
+    {
+      "ref": "WEE1 inhibitor adavosertib with radiation in diffuse glioma (trial)",
+      "year": 2022,
+      "doi": "10.1093/noajnl/vdac073",
+      "type": "Clinical (early-phase)",
+      "note": "WEE1 abrogation + RT in glioma; the p53-null synthetic-lethal handle in action."
+    }
+  ],
+  "ATR inhibitor": [
+    {
+      "ref": "DNA damage response inhibitors (ATR-CHK1-WEE1) for glioblastoma \u2014 review",
+      "year": 2021,
+      "doi": "10.1093/noajnl/vdab015",
+      "type": "Review (mechanism/clinical landscape)",
+      "note": "Frames ATR inhibition against replication stress from p53 loss + telomere stress."
+    }
+  ],
+  "6-thio-dG": [
+    {
+      "ref": "Telomerase-targeted strategies incl. 6-thio-dG (telomere uncapping)",
+      "year": 2016,
+      "doi": "10.1186/s13073-016-0324-x",
+      "type": "Review / mechanism",
+      "note": "Rationale for exploiting TERT+ status; 6-thio-dG is experimental, not pharmacy-available."
+    }
+  ],
+  "CUSP9 protocol": [
+    {
+      "ref": "Kast et al., conceptual multi-drug 'Coordinated Undermining of Survival Paths'",
+      "year": 2013,
+      "doi": "10.18632/oncotarget.969",
+      "type": "Concept / rationale",
+      "note": "The original framework for the exact all-weaknesses-at-once strategy you're pursuing."
+    },
+    {
+      "ref": "Efficacy of coordinated pharmacological blockade in GBM stem cells",
+      "year": 2019,
+      "doi": "10.1007/s00432-019-02920-4",
+      "type": "Preclinical validation",
+      "note": "Preclinical support that the combined blockade hits GBM stem cells."
+    }
+  ],
+  "_removed_disulfiram": {
+    "reason": "Removed from active drug library after DIRECT randomized trial (negative).",
+    "evidence": [
+      {
+        "ref": "DIRECT: Disulfiram+Copper + chemo vs chemo alone in recurrent GBM (RANDOMIZED)",
+        "year": 2023,
+        "doi": "10.1001/jamanetworkopen.2023.4149",
+        "type": "Clinical (Randomized, JAMA Netw Open)",
+        "note": "KEY NEGATIVE RESULT: DIRECT randomized trial (n=88, recurrent GBM) \u2014 disulfiram+Cu added to chemotherapy did NOT significantly improve 6-month survival vs chemotherapy alone, and caused significantly more grade >=3 adverse events (34% vs 11%) and serious adverse events (41% vs 16%). Authors concluded it should NOT be recommended for recurrent GBM. This substantially lowers disulfiram's evidence grade.",
+        "finding": "NEGATIVE (randomized)"
+      },
+      {
+        "ref": "Skrott et al. mechanism \u2014 disulfiram/Cu targets NPL4-p97 segregase",
+        "year": 2020,
+        "doi": "10.3390/cells9020469",
+        "type": "Preclinical mechanism",
+        "note": "Molecular basis: Cu-DDC aggregates NPL4 -> proteotoxic stress."
+      }
+    ]
+  }
+}

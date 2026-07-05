@@ -1,0 +1,190 @@
+[
+  {
+    "drug": "Metformin",
+    "track": "F",
+    "vuln": [
+      "V3_PTEN_PI3K",
+      "V7_METABOLIC"
+    ],
+    "bbb": "moderate",
+    "mech": "AMPK activation -> mTOR suppression; complex-I inhibition lowers OXPHOS",
+    "evidence": "Preclinical GBM (10.5966/sctm.2012-0058); many combo trials",
+    "turkey": "global generic (e.g. Glucophage/Glifor) \u2014 confirm with pharmacist"
+  },
+  {
+    "drug": "Atorvastatin",
+    "track": "F",
+    "vuln": [
+      "V7_METABOLIC"
+    ],
+    "bbb": "moderate (lipophilic statin)",
+    "mech": "Mevalonate blockade -> impairs prenylation & cholesterol supply",
+    "evidence": "Preclinical GBM (10.1038/bjc.2014.431)",
+    "turkey": "global generic (e.g. Lipitor/ator-) \u2014 confirm"
+  },
+  {
+    "drug": "Hydroxychloroquine/Chloroquine",
+    "track": "F",
+    "vuln": [
+      "V4_NFKB",
+      "V7_METABOLIC"
+    ],
+    "bbb": "good",
+    "mech": "Autophagy/lysosome blockade removes a survival mechanism under therapy stress",
+    "evidence": "Phase I/II + chemoRT (10.4161/auto.28984)",
+    "turkey": "available (e.g. Plaquenil) \u2014 confirm"
+  },
+  {
+    "drug": "Celecoxib",
+    "track": "F",
+    "vuln": [
+      "V8_IMMUNE",
+      "V4_NFKB",
+      "V6_WNT_TCF7L2"
+    ],
+    "bbb": "moderate",
+    "mech": "COX-2/PGE2 suppression -> microenvironment; celecoxib analogs counter Wnt/beta-catenin",
+    "evidence": "CUSP9 component (10.18632/oncotarget.2408); Wnt (COXIB 2021)",
+    "turkey": "available (e.g. Celebrex) \u2014 confirm"
+  },
+  {
+    "drug": "Mebendazole",
+    "track": "F",
+    "vuln": [
+      "V2_TP53",
+      "V7_METABOLIC"
+    ],
+    "bbb": "variable",
+    "mech": "Microtubule destabilization -> mitotic disruption (partial hit on p53-null mitotic dependence)",
+    "evidence": "Preclinical GBM (10.1093/neuonc/nor077); +TMZ clinical (10.1093/noajnl/vdaa154)",
+    "turkey": "antihelminthic generic \u2014 confirm"
+  },
+  {
+    "drug": "Itraconazole",
+    "track": "F",
+    "vuln": [
+      "V7_METABOLIC",
+      "V8_IMMUNE"
+    ],
+    "bbb": "limited (efflux substrate)",
+    "mech": "Hedgehog/autophagy modulation, anti-angiogenic; induces autophagic GBM growth suppression",
+    "evidence": "GBM autophagy (10.4161/auto.28912); ReDO review (10.3332/ecancer.2015.521)",
+    "turkey": "antifungal generic (e.g. Itraspor) \u2014 confirm"
+  },
+  {
+    "drug": "Valproic acid",
+    "track": "F",
+    "vuln": [
+      "V5_MGMT",
+      "V2_TP53"
+    ],
+    "bbb": "good",
+    "mech": "HDAC inhibition -> chromatin; possible radiosensitization (clinical data mixed)",
+    "evidence": "Radiosensitization (10.1158/1078-0432.ccr-08-0643)",
+    "turkey": "antiepileptic (e.g. Depakin) \u2014 confirm"
+  },
+  {
+    "drug": "Temozolomide (metronomic/rechallenge)",
+    "track": "A",
+    "vuln": [
+      "V5_MGMT",
+      "V2_TP53"
+    ],
+    "bbb": "good",
+    "mech": "Alkylator DNA-damage source; MGMT-unmethylated = reduced benefit -> use as sensitized combination, not standalone",
+    "evidence": "Standard agent; CIViC TP53->TMZ resistance flag",
+    "turkey": "approved oncology (e.g. Temodal) \u2014 confirm"
+  },
+  {
+    "drug": "Lomustine (CCNU)",
+    "track": "A",
+    "vuln": [
+      "V5_MGMT",
+      "V2_TP53"
+    ],
+    "bbb": "good (nitrosourea)",
+    "mech": "Nitrosourea alkylator; standard recurrent-GBM chemo (also MGMT-dependent \u2014 interpret in context)",
+    "evidence": "Recurrent-GBM standard (10.1016/j.ctrv.2020.102029)",
+    "turkey": "approved oncology \u2014 confirm"
+  },
+  {
+    "drug": "Regorafenib",
+    "track": "A",
+    "vuln": [
+      "V3_PTEN_PI3K",
+      "V8_IMMUNE"
+    ],
+    "bbb": "moderate (multikinase)",
+    "mech": "Multikinase/anti-angiogenic; beat lomustine on survival in recurrent GBM (REGOMA)",
+    "evidence": "REGOMA randomized (10.1016/s1470-2045(18)30675-2)",
+    "turkey": "approved oncology (e.g. Stivarga) \u2014 confirm"
+  },
+  {
+    "drug": "Bevacizumab",
+    "track": "A",
+    "vuln": [
+      "V8_IMMUNE",
+      "V7_METABOLIC"
+    ],
+    "bbb": "n/a (acts on vasculature)",
+    "mech": "Anti-VEGF; improves PFS & edema/steroid control in recurrent GBM (OS benefit not shown)",
+    "evidence": "Recurrent-GBM PFS (10.1200/jco.2008.19.8721)",
+    "turkey": "approved oncology (e.g. Altuzan/Avastin) \u2014 confirm"
+  },
+  {
+    "drug": "Everolimus (off-label)",
+    "track": "A",
+    "vuln": [
+      "V3_PTEN_PI3K"
+    ],
+    "bbb": "poor-moderate",
+    "mech": "mTORC1 inhibitor; PTEN-loss rationale but feedback AKT activation & limited single-agent GBM benefit",
+    "evidence": "mTOR pathway rationale (10.18632/oncotarget.7961)",
+    "turkey": "approved (e.g. Afinitor) off-label \u2014 confirm"
+  },
+  {
+    "drug": "Paxalisib (GDC-0084)",
+    "track": "T",
+    "vuln": [
+      "V3_PTEN_PI3K"
+    ],
+    "bbb": "good (brain-penetrant by design)",
+    "mech": "Dual PI3K/mTOR inhibitor engineered to cross BBB; PTEN-loss GBM rationale",
+    "evidence": "Phase 2 (10.1200/jco.2022.40.16_suppl.2047); GBM AGILE NCT03970447",
+    "turkey": "trial / expanded access"
+  },
+  {
+    "drug": "WEE1 inhibitor (adavosertib / Debio 0123)",
+    "track": "T",
+    "vuln": [
+      "V2_TP53"
+    ],
+    "bbb": "moderate (CNS activity)",
+    "mech": "Abrogates G2/M arrest in p53-null cells -> mitotic catastrophe (clean synthetic-lethal hit)",
+    "evidence": "GBM gatekeeper (10.1016/j.ccr.2010.08.011); Debio 0123 NCT05765812",
+    "turkey": "trial (NCT05765812: US/ES/CH)"
+  },
+  {
+    "drug": "ATR inhibitor (ceralasertib/berzosertib)",
+    "track": "T",
+    "vuln": [
+      "V2_TP53",
+      "V1_TERT"
+    ],
+    "bbb": "variable",
+    "mech": "Exploits replication stress from p53 loss + telomere stress (hits both truncal drivers)",
+    "evidence": "Synthetic-lethal in p53-deficient (10.1038/ncomms13837)",
+    "turkey": "trial"
+  },
+  {
+    "drug": "6-thio-dG",
+    "track": "T",
+    "vuln": [
+      "V1_TERT"
+    ],
+    "bbb": "reported CNS (preclinical)",
+    "mech": "Telomerase substrate -> telomere dysfunction selectively in TERT+ cells",
+    "evidence": "Telomerase-targeting (10.1186/s13073-016-0324-x)",
+    "turkey": "experimental (not available)"
+  }
+]

@@ -1,0 +1,1143 @@
+{
+ "vulnerability": [
+  {
+   "vuln_id": "V1_TERT",
+   "label": "TERT promotör C250T",
+   "driver": "TERT C250T (truncal)",
+   "clonality": "truncal",
+   "priority": 1,
+   "is_gap": 1
+  },
+  {
+   "vuln_id": "V2_TP53",
+   "label": "TP53 çoklu kayıp",
+   "driver": "TP53 splice+Y163N+G245S+P152L",
+   "clonality": "truncal",
+   "priority": 1,
+   "is_gap": 0
+  },
+  {
+   "vuln_id": "V3_PTEN_PI3K",
+   "label": "PTEN kaybı + chr10",
+   "driver": "PTEN R130* + chr10 loss",
+   "clonality": "subklonal",
+   "priority": 2,
+   "is_gap": 0
+  },
+  {
+   "vuln_id": "V4_NFKB",
+   "label": "NFKBIA delesyonu",
+   "driver": "NFKBIA del 14q13.2",
+   "clonality": "fokal",
+   "priority": 2,
+   "is_gap": 0
+  },
+  {
+   "vuln_id": "V5_MGMT",
+   "label": "MGMT metillenmemiş",
+   "driver": "MGMT unmethylated",
+   "clonality": "biyobelirteç",
+   "priority": 2,
+   "is_gap": 0
+  },
+  {
+   "vuln_id": "V6_WNT_TCF7L2",
+   "label": "TCF7L2 delesyonu",
+   "driver": "TCF7L2 del 10q25",
+   "clonality": "fokal",
+   "priority": 3,
+   "is_gap": 1
+  },
+  {
+   "vuln_id": "V7_METABOLIC",
+   "label": "Metabolik fenotip",
+   "driver": "Warburg/mevalonat/otofaji",
+   "clonality": "soy",
+   "priority": 2,
+   "is_gap": 0
+  },
+  {
+   "vuln_id": "V8_IMMUNE",
+   "label": "İmmün-soğuk",
+   "driver": "TMB4.7 MSS HRD- PDL1:0",
+   "clonality": "biyobelirteç",
+   "priority": 3,
+   "is_gap": 0
+  }
+ ],
+ "mechanism_node": [
+  {
+   "node_id": 1,
+   "vuln_id": "V1_TERT",
+   "node_name": "telomerase-catalytic"
+  },
+  {
+   "node_id": 2,
+   "vuln_id": "V1_TERT",
+   "node_name": "telomere-replication-stress(ATR)"
+  },
+  {
+   "node_id": 3,
+   "vuln_id": "V2_TP53",
+   "node_name": "WEE1-G2/M"
+  },
+  {
+   "node_id": 4,
+   "vuln_id": "V2_TP53",
+   "node_name": "ATR-replication-stress"
+  },
+  {
+   "node_id": 5,
+   "vuln_id": "V2_TP53",
+   "node_name": "mitotik-mikrotübül"
+  },
+  {
+   "node_id": 6,
+   "vuln_id": "V2_TP53",
+   "node_name": "HDAC/kromatin"
+  },
+  {
+   "node_id": 7,
+   "vuln_id": "V3_PTEN_PI3K",
+   "node_name": "PI3K/mTOR-direkt"
+  },
+  {
+   "node_id": 8,
+   "vuln_id": "V3_PTEN_PI3K",
+   "node_name": "AMPK→mTOR-dolaylı"
+  },
+  {
+   "node_id": 9,
+   "vuln_id": "V3_PTEN_PI3K",
+   "node_name": "multikinaz"
+  },
+  {
+   "node_id": 10,
+   "vuln_id": "V4_NFKB",
+   "node_name": "proteazom→NF-κB (DOĞRUDAN)"
+  },
+  {
+   "node_id": 11,
+   "vuln_id": "V4_NFKB",
+   "node_name": "COX2/PGE2→NF-κB (dolaylı)"
+  },
+  {
+   "node_id": 12,
+   "vuln_id": "V4_NFKB",
+   "node_name": "otofaji/lizozom (dolaylı)"
+  },
+  {
+   "node_id": 13,
+   "vuln_id": "V5_MGMT",
+   "node_name": "alkilleyici-DNA-hasarı"
+  },
+  {
+   "node_id": 14,
+   "vuln_id": "V5_MGMT",
+   "node_name": "HDAC-duyarlılaştırma"
+  },
+  {
+   "node_id": 15,
+   "vuln_id": "V6_WNT_TCF7L2",
+   "node_name": "COX/Wnt-β-katenin (ZAYIF/DOLAYLI — önceki 'GAP' bulgusu geçerli)"
+  },
+  {
+   "node_id": 16,
+   "vuln_id": "V7_METABOLIC",
+   "node_name": "OXPHOS/kompleks-I"
+  },
+  {
+   "node_id": 17,
+   "vuln_id": "V7_METABOLIC",
+   "node_name": "mevalonat/kolesterol"
+  },
+  {
+   "node_id": 18,
+   "vuln_id": "V7_METABOLIC",
+   "node_name": "otofaji/lizozom"
+  },
+  {
+   "node_id": 19,
+   "vuln_id": "V7_METABOLIC",
+   "node_name": "anti-anjiyogenez/damar"
+  },
+  {
+   "node_id": 20,
+   "vuln_id": "V8_IMMUNE",
+   "node_name": "COX2/PGE2-myeloid"
+  },
+  {
+   "node_id": 21,
+   "vuln_id": "V8_IMMUNE",
+   "node_name": "VEGF/damar-normalizasyonu"
+  },
+  {
+   "node_id": 22,
+   "vuln_id": "V8_IMMUNE",
+   "node_name": "anti-anjiyogenez"
+  }
+ ],
+ "drug": [
+  {
+   "drug_id": 1,
+   "name": "Metformin",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "F",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 2,
+   "name": "Atorvastatin",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "F",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 3,
+   "name": "Simvastatin",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "F",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 4,
+   "name": "Hidroksiklorokin",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "F",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 5,
+   "name": "Celecoxib",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "F",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 6,
+   "name": "Mebendazol",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "F",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 7,
+   "name": "Valproik asit",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "F",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 8,
+   "name": "İtraconazol",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "X",
+   "status": "removed",
+   "removed_reason": "node redundant + CYP3A4/QT",
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 9,
+   "name": "Temozolomid",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "A",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 10,
+   "name": "Lomustin",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "A",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 11,
+   "name": "Regorafenib",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "A",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 12,
+   "name": "Bevacizumab (Altuzan)",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "A",
+   "status": "active",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 13,
+   "name": "Everolimus",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "A",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 14,
+   "name": "Marizomib",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "O",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 15,
+   "name": "Bortezomib",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "O",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 16,
+   "name": "Paxalisib",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "T",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 17,
+   "name": "Adavosertib (WEE1i)",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "T",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 18,
+   "name": "Ceralasertib (ATRi)",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "T",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 19,
+   "name": "6-thio-2-deoxyguanosine",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "T",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": "V1 tarama (güncellendi): GERÇEK telomeraz-bağımlı mekanizma (TERT hedefi — hastanın TERT promotör mut. ile uyumlu). Kaynak: makale ABSTRACT'ı (DOI 10.1158/1535-7163.mct-17-0792, 2018; tam metin PDF açık erişimde yok). Abstract'a göre: KBB geçişi ortotopik DIPG modelinde gösterilmiş; medulloblastom ksenograftında tümör büyüme gecikmesi; DIPG/HGG kök hücrelerinde ölüm; ATR/ATM→G2-M arrest. Klinik-aşama: THIO-101 Faz 2 (NSCLC, 2025). KISIT: in-vivo beyin verisi PEDİATRİK tümörlerde; erişkin GBM spesifik klinik/in-vivo veri YOK. SONUÇ: en güçlü V1 adayı; deneysel/izlemede, erişkin GBM verisi çıkarsa terfi."
+  },
+  {
+   "drug_id": 20,
+   "name": "Dordaviprone (ONC201)",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "O",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 21,
+   "name": "Disulfiram",
+   "chembl_id": null,
+   "source": "curated",
+   "access_track": "X",
+   "status": "removed",
+   "removed_reason": "DIRECT randomize-negatif",
+   "added_at": "2026-07-05 13:30:24",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 22,
+   "name": "Ixazomib",
+   "chembl_id": "CHEMBL2141296",
+   "source": "chembl+literature",
+   "access_track": "O",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:42:39",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 23,
+   "name": "Carfilzomib",
+   "chembl_id": "CHEMBL451887",
+   "source": "chembl+literature",
+   "access_track": "O",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:42:39",
+   "monitor_note": null
+  },
+  {
+   "drug_id": 24,
+   "name": "WNT-974 (LGK-974)",
+   "chembl_id": "CHEMBL3188386",
+   "source": "chembl+literature",
+   "access_track": "T",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 13:42:39",
+   "monitor_note": "V6 tarama: Porcupine inhibitörü; GBM klinik etkinlik kanıtı yok (yalnız derleme/in-vitro) → izlemede, klinik dokümana terfi YOK"
+  },
+  {
+   "drug_id": 25,
+   "name": "Eribulin",
+   "chembl_id": "CHEMBL1683590",
+   "source": "literature+chembl-doğrulandı",
+   "access_track": "T",
+   "status": "candidate",
+   "removed_reason": null,
+   "added_at": "2026-07-05 16:50:24",
+   "monitor_note": "V2 mitotik değerlendirme: mikrotübül inh. (TERT değil); G2/M-bağımlı TP53-kayıplı hücrelere uyumlu; GBM in-vivo kanıtı GÜÇLÜ (beyin penetrasyonu + RT sinerjisi, DOI 10.1111/cas.14067) ama klinik GBM verisi YOK; QT-uzatma → Lamide/lakozamid ile EKG ZORUNLU; miyelosupresyon örtüşmesi. İZLEMEDE, WEE1i altında öncelik."
+  }
+ ],
+ "drug_node": [
+  {
+   "drug_id": 1,
+   "node_id": 8,
+   "directness": "indirect"
+  },
+  {
+   "drug_id": 1,
+   "node_id": 16,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 2,
+   "node_id": 17,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 3,
+   "node_id": 17,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 4,
+   "node_id": 12,
+   "directness": "indirect"
+  },
+  {
+   "drug_id": 4,
+   "node_id": 18,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 5,
+   "node_id": 20,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 5,
+   "node_id": 11,
+   "directness": "indirect"
+  },
+  {
+   "drug_id": 5,
+   "node_id": 15,
+   "directness": "indirect"
+  },
+  {
+   "drug_id": 6,
+   "node_id": 5,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 6,
+   "node_id": 16,
+   "directness": "indirect"
+  },
+  {
+   "drug_id": 7,
+   "node_id": 14,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 7,
+   "node_id": 6,
+   "directness": "indirect"
+  },
+  {
+   "drug_id": 8,
+   "node_id": 18,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 8,
+   "node_id": 19,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 8,
+   "node_id": 22,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 9,
+   "node_id": 13,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 9,
+   "node_id": 4,
+   "directness": "indirect"
+  },
+  {
+   "drug_id": 10,
+   "node_id": 13,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 11,
+   "node_id": 9,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 11,
+   "node_id": 22,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 12,
+   "node_id": 19,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 12,
+   "node_id": 21,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 13,
+   "node_id": 7,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 14,
+   "node_id": 10,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 15,
+   "node_id": 10,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 16,
+   "node_id": 7,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 17,
+   "node_id": 3,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 18,
+   "node_id": 4,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 19,
+   "node_id": 1,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 21,
+   "node_id": 10,
+   "directness": "indirect"
+  },
+  {
+   "drug_id": 22,
+   "node_id": 10,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 23,
+   "node_id": 10,
+   "directness": "direct"
+  },
+  {
+   "drug_id": 24,
+   "node_id": 15,
+   "directness": "direct"
+  }
+ ],
+ "pharmacology": [
+  {
+   "drug_id": 1,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 82,
+   "dose_gap_ratio": 0.0015,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 2,
+   "bbb_class": "olculmus-zayif",
+   "bbb_confidence": 30,
+   "dose_gap_ratio": 0.002,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 3,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 80,
+   "dose_gap_ratio": 0.01,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 4,
+   "bbb_class": "CNS-aktif",
+   "bbb_confidence": 57,
+   "dose_gap_ratio": 0.3,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 5,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 63,
+   "dose_gap_ratio": 0.003,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 6,
+   "bbb_class": "tahmini",
+   "bbb_confidence": 40,
+   "dose_gap_ratio": 0.5,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 7,
+   "bbb_class": "CNS-aktif",
+   "bbb_confidence": 60,
+   "dose_gap_ratio": 0.05,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 8,
+   "bbb_class": "olculmus-zayif",
+   "bbb_confidence": 25,
+   "dose_gap_ratio": 0.007,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 9,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 70,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 10,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 70,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 11,
+   "bbb_class": "tahmini",
+   "bbb_confidence": 35,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 12,
+   "bbb_class": "anti-anjiyogenik",
+   "bbb_confidence": 50,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 13,
+   "bbb_class": "olculmus-zayif",
+   "bbb_confidence": 30,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 14,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 86,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 15,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 71,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 16,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 80,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 17,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 81,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 18,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 75,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 19,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 68,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 20,
+   "bbb_class": "olculmus-iyi",
+   "bbb_confidence": 94,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 21,
+   "bbb_class": "olculmus-zayif",
+   "bbb_confidence": 20,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 22,
+   "bbb_class": "tahmini",
+   "bbb_confidence": 40,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 23,
+   "bbb_class": "olculmus-zayif",
+   "bbb_confidence": 20,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  },
+  {
+   "drug_id": 24,
+   "bbb_class": "tahmini",
+   "bbb_confidence": 45,
+   "dose_gap_ratio": null,
+   "dose_gap_note": null
+  }
+ ],
+ "toxicity": [
+  {
+   "drug_id": 1,
+   "boxed": 0,
+   "organ_load": "{\"metabolik\": 2, \"bobrek\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 2,
+   "boxed": 0,
+   "organ_load": "{\"karaciger\": 1, \"kas\": 1, \"metabolik\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 3,
+   "boxed": 0,
+   "organ_load": "{\"karaciger\": 1, \"kas\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 1,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 4,
+   "boxed": 0,
+   "organ_load": "{\"kalp_qt\": 1, \"goz\": 1}",
+   "qt_flag": 1,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 5,
+   "boxed": 1,
+   "organ_load": "{\"kalp_qt\": 1, \"gis\": 1, \"bobrek\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 6,
+   "boxed": 0,
+   "organ_load": "{\"karaciger\": 1, \"kemik_iligi\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 7,
+   "boxed": 1,
+   "organ_load": "{\"karaciger\": 2, \"kemik_iligi\": 1, \"metabolik\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 8,
+   "boxed": 1,
+   "organ_load": "{\"karaciger\": 1, \"kalp_qt\": 1}",
+   "qt_flag": 1,
+   "cyp3a4_flag": 1,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 9,
+   "boxed": 0,
+   "organ_load": "{\"kemik_iligi\": 2, \"karaciger\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 10,
+   "boxed": 1,
+   "organ_load": "{\"kemik_iligi\": 3}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 11,
+   "boxed": 1,
+   "organ_load": "{\"karaciger\": 2, \"kan_basinci\": 1, \"gis\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 12,
+   "boxed": 0,
+   "organ_load": "{\"kan_basinci\": 1, \"gis\": 1, \"bobrek\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 13,
+   "boxed": 0,
+   "organ_load": "{\"metabolik\": 1, \"akciger\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 1,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 14,
+   "boxed": 0,
+   "organ_load": "{\"cns\": 2}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 15,
+   "boxed": 0,
+   "organ_load": "{\"noropati\": 2}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 16,
+   "boxed": 0,
+   "organ_load": "{\"metabolik\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 17,
+   "boxed": 0,
+   "organ_load": "{\"kemik_iligi\": 2}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 18,
+   "boxed": 0,
+   "organ_load": "{\"kemik_iligi\": 2}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 19,
+   "boxed": 0,
+   "organ_load": "{\"kemik_iligi\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 20,
+   "boxed": 0,
+   "organ_load": "{\"yorgunluk\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 21,
+   "boxed": 0,
+   "organ_load": "{\"karaciger\": 1, \"noropati\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 22,
+   "boxed": 0,
+   "organ_load": "{\"gis\": 1, \"kemik_iligi\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 23,
+   "boxed": 0,
+   "organ_load": "{\"kalp_qt\": 1, \"kemik_iligi\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  },
+  {
+   "drug_id": 24,
+   "boxed": 0,
+   "organ_load": "{\"gis\": 1}",
+   "qt_flag": 0,
+   "cyp3a4_flag": 0,
+   "ddi_note": null
+  }
+ ],
+ "combination": [
+  {
+   "combo_id": "K2",
+   "label": "Dengeli (+otofaji/NF-κB)",
+   "coverage": null,
+   "tox_score": null
+  },
+  {
+   "combo_id": "K3",
+   "label": "Geniş (+multikinaz)",
+   "coverage": null,
+   "tox_score": null
+  },
+  {
+   "combo_id": "K5",
+   "label": "Kanıt+beyin optimize",
+   "coverage": null,
+   "tox_score": null
+  }
+ ],
+ "combination_member": [
+  {
+   "combo_id": "K2",
+   "drug_id": 12,
+   "role": "current"
+  },
+  {
+   "combo_id": "K2",
+   "drug_id": 9,
+   "role": "added"
+  },
+  {
+   "combo_id": "K2",
+   "drug_id": 1,
+   "role": "added"
+  },
+  {
+   "combo_id": "K2",
+   "drug_id": 2,
+   "role": "added"
+  },
+  {
+   "combo_id": "K2",
+   "drug_id": 4,
+   "role": "added"
+  },
+  {
+   "combo_id": "K3",
+   "drug_id": 12,
+   "role": "current"
+  },
+  {
+   "combo_id": "K3",
+   "drug_id": 9,
+   "role": "added"
+  },
+  {
+   "combo_id": "K3",
+   "drug_id": 1,
+   "role": "added"
+  },
+  {
+   "combo_id": "K3",
+   "drug_id": 2,
+   "role": "added"
+  },
+  {
+   "combo_id": "K3",
+   "drug_id": 4,
+   "role": "added"
+  },
+  {
+   "combo_id": "K3",
+   "drug_id": 11,
+   "role": "added"
+  },
+  {
+   "combo_id": "K5",
+   "drug_id": 12,
+   "role": "current"
+  },
+  {
+   "combo_id": "K5",
+   "drug_id": 9,
+   "role": "added"
+  },
+  {
+   "combo_id": "K5",
+   "drug_id": 1,
+   "role": "added"
+  },
+  {
+   "combo_id": "K5",
+   "drug_id": 2,
+   "role": "added"
+  },
+  {
+   "combo_id": "K5",
+   "drug_id": 4,
+   "role": "added"
+  },
+  {
+   "combo_id": "K5",
+   "drug_id": 16,
+   "role": "added"
+  },
+  {
+   "combo_id": "K5",
+   "drug_id": 17,
+   "role": "added"
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": 1,
+   "drug_id": 22,
+   "doi": "10.3892/mco.2020.2114",
+   "title": "A phase 0 analysis of ixazomib in patients with glioblastoma",
+   "year": 2020,
+   "evidence_level": "faz0",
+   "direction": "belirsiz",
+   "verified": 1,
+   "verify_source": "openalex",
+   "note": null
+  },
+  {
+   "evidence_id": 2,
+   "drug_id": 23,
+   "doi": null,
+   "title": null,
+   "year": null,
+   "evidence_level": "preklinik",
+   "direction": "belirsiz",
+   "verified": 0,
+   "verify_source": null,
+   "note": null
+  },
+  {
+   "evidence_id": 3,
+   "drug_id": 24,
+   "doi": null,
+   "title": "Wnt/β-catenin pathway inhibitor (Porcupine)",
+   "year": 2020,
+   "evidence_level": "preklinik",
+   "direction": "belirsiz",
+   "verified": 0,
+   "verify_source": null,
+   "note": null
+  }
+ ]
+}
