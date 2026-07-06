@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kombinasyon Tedavisi Araştırma Dosyası — Nüks Glioblastom (IDH-vahşi tip, RTK1)</title>
+<style>
+:root{--fg:#1a1a2e;--muted:#555;--accent:#2c5f8a;--border:#d8dee8;--bg:#fff;--code:#f4f6fa}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+line-height:1.55;color:var(--fg);max-width:960px;margin:0 auto;padding:0 20px 80px;font-size:16.5px;background:var(--bg)}
+.backbar{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);
+border-bottom:1px solid var(--border);padding:12px 0;margin-bottom:24px;z-index:10}
+.backbtn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+padding:8px 16px;border-radius:8px;font-size:14.5px;font-weight:600;border:none;cursor:pointer}
+.backbtn:hover{background:#1e4568}
+.home{margin-left:10px;color:var(--accent);text-decoration:none;font-size:14px}
+h1{font-size:26px;line-height:1.25;border-bottom:2px solid var(--accent);padding-bottom:10px;margin-top:6px}
+h2{font-size:21px;margin-top:34px;color:var(--accent)}
+h3{font-size:17.5px;margin-top:26px}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:13.5px}
+th,td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--code);font-weight:600}
+tr:nth-child(even) td{background:#fafbfd}
+code{background:var(--code);padding:2px 6px;border-radius:4px;font-size:0.88em}
+pre{background:var(--code);padding:14px;border-radius:8px;overflow-x:auto}
+blockquote{border-left:4px solid var(--accent);margin:16px 0;padding:8px 18px;background:#f6f9fc;color:var(--muted)}
+img{max-width:100%;height:auto;border:1px solid var(--border);border-radius:8px;margin:16px 0}
+a{color:var(--accent)}
+hr{border:none;border-top:1px solid var(--border);margin:28px 0}
+.docmeta{color:var(--muted);font-size:13px;margin-bottom:20px}
+</style></head><body>
+<div class="backbar"><a href="#" class="backbtn" onclick="history.back();return false;">‹‹ Geri Dön</a><a href="index.html" class="home">Ana sayfa (Strateji)</a></div>
+<h1>Kombinasyon Tedavisi Araştırma Dosyası — Nüks Glioblastom (IDH-vahşi tip, RTK1)</h1>
+<p><strong>Amaç.</strong> Bu tümörün spesifik moleküler zayıflıklarından kan-beyin bariyeri (BBB)'ni geçebilen ilaç kombinasyonlarına — hem onkoloji ajanlarını hem de yeniden kullanılabilir, eczaneden erişilebilir ilaçları kapsayan — kanıta dayalı, yapılandırılmış bir harita; birden fazla hayatta-kalma yolağına <em>aynı anda</em> saldırmak üzere tasarlanmıştır. Yeni kanıtlar ortaya çıktıkça yeniden çalıştırılıp güncellenebilecek şekilde oluşturulmuştur.</p>
+<hr />
+<h2>1. Tümörün zayıflık parmak izi</h2>
+<p>Doğrudan 2026-05-21 tarihli genomik profilleme özetinden türetilmiştir. Her biri bir terapinin çekebileceği bir kaldıraçtır.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Değişiklik (raporunuzdan)</th>
+<th>Klonalite</th>
+<th>Ne yapar</th>
+<th>Hedeflenebilir düğüm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1</td>
+<td><strong>TERT</strong> promoter C250T</td>
+<td>Truncal sürücü (VAF %23)</td>
+<td>Telomerazı yeniden aktive eder → ölümsüzlük</td>
+<td>Telomer replikasyon stresi (ATR), telomeraz substratı</td>
+</tr>
+<tr>
+<td>V2</td>
+<td><strong>TP53</strong> kaybı — splice + Y163N + G245S + P152L</td>
+<td>Truncal / eş-klonal (~%24–25)</td>
+<td>G1/S kontrol noktası devre dışı → tümör hayatta kalmak için <strong>G2/M kontrol noktasına</strong> yaslanır</td>
+<td><strong>WEE1, CHK1, ATR, PLK1</strong></td>
+</tr>
+<tr>
+<td>V3</td>
+<td><strong>PTEN</strong> R130* + <strong>kromozom 10 kaybı</strong></td>
+<td>Geniş kromozom 10 kaybı üzerinde subklonal PTEN</td>
+<td><strong>PI3K/AKT/mTOR</strong>'u serbest bırakır</td>
+<td>Beyne nüfuz edebilen PI3K/mTOR, AMPK</td>
+</tr>
+<tr>
+<td>V4</td>
+<td><strong>NFKBIA</strong> delesyonu (14q13.2)</td>
+<td>Fokal delesyon</td>
+<td>IκB-α kaybı → sürekli <strong>NF-κB</strong> hayatta-kalma sinyali</td>
+<td>NF-κB, proteazom ekseni, kök hücre benzeri özellik (stemness)</td>
+</tr>
+<tr>
+<td>V5</td>
+<td><strong>MGMT</strong> promoter <strong>metillenmemiş</strong></td>
+<td>Biyobelirteç</td>
+<td>Aktif MGMT alkilasyonu onarır → <strong>temozolomide direnci</strong></td>
+<td>MGMT'den bağımsız yollar; duyarlılaştırıcılar</td>
+</tr>
+<tr>
+<td>V6</td>
+<td><strong>TCF7L2</strong> delesyonu (10q25)</td>
+<td>Fokal delesyon</td>
+<td>Wnt/β-catenin bozulması (bağlama-bağımlı)</td>
+<td>Wnt/GSK3 (keşifsel, düşük öncelik)</td>
+</tr>
+<tr>
+<td>V7</td>
+<td>GBM <strong>metabolik</strong> fenotip</td>
+<td>Soy düzeyinde</td>
+<td>Warburg glikolizi, mevalonat/kolesterol bağımlılığı, otofaji ile hayatta kalma</td>
+<td>OXPHOS, HMG-CoA, otofaji/lizozom</td>
+</tr>
+<tr>
+<td>V8</td>
+<td><strong>İmmünolojik olarak soğuk</strong> (TMB 4.7, MSS, HRD−, PD-L1 0)</td>
+<td>Biyobelirteç</td>
+<td>Düşük neoantijen yükü → tek ajanlı checkpoint blokajı olası değil</td>
+<td>Mikroçevre / miyeloid modülasyon</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Canlı kanıt teyidi (bu oturumda sorgulandı).</strong> Open Targets Platform'da, tümörde değişikliğe uğramış genler glioblastomla ilişkili en üst sıradaki hedefler arasında yer almaktadır: <strong>TP53 (skor 0.72), PTEN (0.64), TERT (0.54)</strong> — yani bu profilin taşıdığı sürücüler, alanın hastalıkla en çok ilişkilendirdiği genlerdir. CIViC'te, <strong>TERT</strong> promoter mutasyonu glioblastomda <em>kötü-prognoz</em> kanıtı taşımaktadır (5 kayıttan 4'ü, yön SUPPORTS; 3'ü Seviye B, 1'i Seviye D), ve <strong>TP53</strong> <em>temozolomide-direnci</em> kanıtı taşımaktadır — TMZ'nin tek başına burada zayıf bir kaldıraç olduğunu bağımsız olarak güçlendirmektedir (MGMT-metillenmemiş durumu ile tutarlı). Not: <strong>PTEN</strong> için, tek prognostik CIViC kaydı (EID343) yön olarak <em>DOES_NOT_SUPPORT</em>'tur — yani PTEN mutasyonunun GBM'de prognostik <strong>olmadığı</strong> bildirilmektedir; PTEN'in buradaki terapötik önemi bir prognostik düğüm olarak değil, <strong>prediktif</strong> bir düğüm (PI3K/mTOR yolak aktivasyonu) olarak gelmektedir.</p>
+<hr />
+<h2>2. Tasarım mantığı — "sürücüleri kapsa, kaçışları engelle"</h2>
+<p>Hedefinizle (tüm zayıflıklara <em>aynı anda</em> saldırmak) örtüşen nüks-GBM literatürü katmanlı bir tasarımda birleşmektedir. Bu dosya bu tasarımı takip eder:</p>
+<ol>
+<li><strong>Önce truncal sürücüler.</strong> TERT (V1) ve TP53 kaybı (V2) truncal'dır — esasen her tümör hücresinde mevcuttur. Bunları göz ardı eden bir rejim tümörün yalnızca bir kısmını tedavi eder.</li>
+<li><strong>p53-null sentetik-öldürücü fırsatı (V2) en güçlü hedeflenmiş fırsattır.</strong> G1/S kontrol noktası devre dışı kaldığında, hücreler DNA hasarından kurtulmak için <strong>G2/M kontrol noktasına</strong> (WEE1/ATR/CHK1) bağımlı hale gelir. Bu kontrol noktasını kaldırmak <em>ile aynı zamanda</em> bir DNA-hasar kaynağı (radyasyon veya alkilleyici ajan) uygulamak hücreleri ölümcül mitotik felakete iter. Bu gerçek, gen-eşleşmeli bir zayıflıktır — genel bir sitotoksik değildir.</li>
+<li><strong>Büyüme ve hayatta-kalma pompalarını kapat (V3, V4).</strong> PI3K/mTOR ve NF-κB aktive olmuş iki hayatta-kalma eksenidir; beyne nüfuz edebilen inhibitörler + yeniden kullanılabilen baskılayıcılar her ikisine de vurur.</li>
+<li><strong>Metabolik/otofaji kaçış yollarını aç bırakma (V7).</strong> Hedeflenmiş stres altındaki tümörler otofaji ve metabolik esneklik yoluyla hayatta kalır — yeniden kullanım katmanı (metformin, statin, klorokin, disülfiram) bu kapıları kapatır.</li>
+<li><strong>İmmünoterapiye aşırı yatırım yapma (V8).</strong> Soğuk profil, tek-ajan checkpoint inhibitörlerinden az bir yarar öngörür; mikroçevre modülatörleri (örn. celecoxib) yardımcı ajanlardır, ana kaldıraç değil.</li>
+</ol>
+<hr />
+<h2>3. Aday ilaç kütüphanesi (zayıflıklara + BBB'ye eşlenmiş)</h2>
+<p>Kapsam matrisi figürüne bakınız. <strong>R</strong> katmanı = yeniden kullanılabilir/eczaneden erişilebilir;<br />
+<strong>O</strong> katmanı = onkoloji/hedefe yönelik (deneysel çalışma veya onkolog gözetiminde etiket-dışı).</p>
+<h3>Yeniden kullanılabilir, BBB'yi geçebilen (R katmanı)</h3>
+<ul>
+<li><strong>Metformin</strong> — AMPK aktivasyonu → mTOR baskılanması; kompleks-I inhibisyonu OXPHOS'u düşürür. <em>V3, V7'yi hedefler.</em> BBB: orta.</li>
+<li><strong>Disülfiram + bakır</strong> — Cu-DDC, NPL4/p97'yi agrege eder → proteotoksik stres; NF-κB &amp; ALDH (kök hücre benzeri özellik) inhibisyonu. <em>V4, V7'yi hedefler.</em> BBB: iyi. (DIRECT çalışması NCT02678975; CUSP9 NCT02770378.)</li>
+<li><strong>Klorokin / Hidroksiklorokin</strong> — otofaji/lizozom blokajı, tedavi stresi altında önemli bir hayatta-kalma mekanizmasını ortadan kaldırır. <em>V4, V7'yi hedefler.</em> BBB: iyi. (Randomize adjuvan çalışma NCT00224978.)</li>
+<li><strong>Atorvastatin</strong> (lipofilik statin) — mevalonat blokajı → prenilasyonu &amp; kolesterol tedarikini bozar. <em>V7'yi hedefler.</em> BBB: orta.</li>
+<li><strong>Celecoxib</strong> — COX-2/PGE2 baskılanması → mikroçevre. <em>V8, V4'ü hedefler.</em> CUSP9'un bileşeni. BBB: orta.</li>
+<li><strong>Mebendazol</strong> — mikrotübül destabilizasyonu; GBM preklinik + Johns Hopkins çalışmaları. <em>V2, V7'yi hedefler.</em> BBB: değişken.</li>
+<li><strong>Valproik asit</strong> — HDAC inhibisyonu; olası radyoduyarlılaştırma (kanıt karışık). <em>V2, V5'i hedefler.</em> BBB: iyi.</li>
+</ul>
+<h3>Onkoloji / hedefe yönelik (O katmanı)</h3>
+<ul>
+<li><strong>Paxalisib (GDC-0084)</strong> — BBB'yi geçmek üzere tasarlanmış çift PI3K/mTOR inhibitörü; PTEN-kaybı gerekçesi. <em>V3'ü hedefler.</em> (GBM AGILE NCT03970447; paxalisib+metformin+keto NCT05183204.)</li>
+<li><strong>Adavosertib (AZD1775, WEE1 inhibitörü)</strong> — p53-null hücrelerde G2/M tutukluğunu ortadan kaldırır → mitotik felaket. <em>V2'yi hedefler.</em> (GBM Faz 0 NCT02207010; +RT/TMZ NCT01849146.)</li>
+<li><strong>ATR inhibitörü (ceralasertib / berzosertib)</strong> — p53 kaybı + telomer stresinden kaynaklanan replikasyon stresini kullanır. <em>V2, V1'i hedefler.</em></li>
+<li><strong>6-thio-2'-deoxyguanosine</strong> — telomeraz substratı → TERT+ hücrelerde seçici olarak telomer disfonksiyonu; preklinik CNS aktivitesi. <em>V1'i hedefler.</em> (Deneysel, eczaneden erişilebilir değil.)</li>
+<li><strong>Temozolomide (bağlam)</strong> — standart alkilleyici, ancak MGMT-metillenmemiş = azalmış yarar → tek başına kaldıraç olarak değil, <em>duyarlılaştırılmış/kombinasyon</em> DNA-hasar kaynağı olarak kullanın. <em>V5 için bağlam.</em></li>
+</ul>
+<hr />
+<h2>4. Aday kombinasyon rejimleri</h2>
+<p>Erişim spektrumunu kapsayan üç rejim. En düşükten en yüksek erişim engeline doğru sıralanmıştır.</p>
+<h3>Rejim A — Yeniden kullanım omurgası (tümü eczaneden erişilebilir)</h3>
+<p><strong>Metformin + Disülfiram/Cu + Klorokin + Atorvastatin + Celecoxib.</strong><br />
+V3, V4, V7, V8'i kapsar. Yalnızca jenerik oral, BBB'yi geçebilen ilaçlar kullanarak geniş yolak baskılaması. <strong>Emsal:</strong> <strong>CUSP9*</strong> protokolü (NCT02770378), 9 ilaçlık bir yeniden kullanım kokteyli + metronomik TMZ'nin nüks GBM'de <em>uygulanabilir ve tolere edilebilir</em> olduğunu göstermiştir.<br />
+<strong>Boşluk:</strong> p53-null G2/M bağımlılığına (V2) veya telomer eksenine (V1) doğrudan vurmaz; sitostatiğe yaslanır.</p>
+<blockquote>
+<p><strong>⚠ Disülfiram üzerine kanıt-düzeyi güncellemesi (bu iterasyonda eklendi).</strong> <strong>DIRECT randomize çalışması</strong><br />
+(NCT02678975; JAMA Netw Open 2023, n=88 nüks GBM), disülfiram + bakırın alkilleyici<br />
+kemoterapiye eklenmesinin 6-aylık sağkalımı alkilleyici kemoterapiye kıyasla <strong>anlamlı<br />
+derecede iyileştirmediğini</strong> ve anlamlı derecede daha fazla toksisiteye neden olduğunu<br />
+bulmuştur (grade ≥3 advers olaylar %34 vs %11; ciddi advers olaylar %41 vs %16). Yazarlar<br />
+nüks GBM için <strong>önerilmemesi gerektiği</strong> sonucuna varmıştır. Bu, tüm kütüphanedeki en yüksek<br />
+kanıt düzeyi olup <em>negatiftir</em> — disülfiram bir omurga çapası olarak <strong>önceliğinin<br />
+düşürülmesi</strong> gerekir. Bu, çoklu-hedef <em>kavramını</em> geçersiz kılmaz, ancak spesifik<br />
+disülfiram+Cu kolu sonuç vermemiştir, dolayısıyla bir yeniden kullanım omurgası buna<br />
+yaslanmamalıdır. Değiştirilmesi veya çıkarılması düşünülmeli ve toksisite sinyali göz<br />
+önünde bulundurularak onkologla görüşülmelidir.</p>
+</blockquote>
+<h3>Rejim B — Hedeflenmiş sentetik-öldürücü çekirdek (onkoloji/deneysel erişim gerektirir)</h3>
+<p><strong>Paxalisib + (Adavosertib <em>veya</em> ATR inhibitörü) + bir DNA-hasar kaynağı (RT veya alkilleyici ajan).</strong><br />
+V2, V3, V1'i kapsar. Bu, stratejinin gen-eşleşmeli kalbidir: p53-null bir tümörde beyne<br />
+nüfuz edebilen PI3K/mTOR blokajı + G2/M-kontrol noktası ortadan kaldırılması. <strong>Emsal:</strong><br />
+paxalisib GBM AGILE (NCT03970447); adavosertib GBM Faz 0/1 (NCT02207010, NCT01849146).<br />
+<strong>Boşluk:</strong> erişimi sınırlı; örtüşen miyelosüpresyon dikkatli dozlama/sıralama gerektirir.</p>
+<h3>Rejim C — Entegre (omurga + bir hedeflenmiş çapa) — <em>en gerçekçi</em></h3>
+<p><strong>Paxalisib + Metformin + ketojenik metabolik baskı + Disülfiram/Cu + Klorokin.</strong><br />
+V2 (metabolik/replikasyon stresi yoluyla kısmi), V3, V4, V7'yi kapsar. <strong>Emsal:</strong> gerçek<br />
+bir çalışma <strong>paxalisib + ketojenik diyet + metformin</strong>'i GBM'de test etmiştir (NCT05183204) —<br />
+bu tam kombinasyonun doğrudan gerçek-dünya analoğu. <strong>Durum uyarısı: NCT05183204,<br />
+ClinicalTrials.gov'da SUSPENDED (askıya alınmış) olarak listelenmektedir</strong> (neden burada<br />
+teyit edilmemiştir — güvenmeden önce doğrulayın; askıya alma finansman, kayıt veya<br />
+güvenlik/idari nedenleri yansıtıyor olabilir). Bu, kombinasyonun tasarlandığını ve<br />
+başlatıldığını gösterir, olumlu sonuçlarla tamamlandığını değil. Bu, tartışılmaya değer<br />
+makul bir uygulanabilir başlangıç noktasıdır — jenerik metabolik/hayatta-kalma-baskılama<br />
+omurgasının üzerine katmanlanmış erişilebilir bir hedeflenmiş çapa (paxalisib) — ancak<br />
+destekleyici emsali askıya alınmış bir çalışmadır, olgunlaşmış sonuç verisi değil.</p>
+<h2>5. Onkolog ile paylaşılması gereken temel güvenlik uyarıları</h2>
+<ul>
+<li><strong>Örtüşen toksisiteler:</strong> miyelosupresyon (alkilleyiciler + checkpoint inhibitörleri),<br />
+  QT uzaması (çeşitli ajanlar), hepatotoksisite (disülfiram, statinler, valproat),<br />
+  retinopati (klorokin, kümülatif doz).</li>
+<li><strong>İlaç-ilaç etkileşimleri:</strong> disülfiram-alkol reaksiyonu (kesinlikle kaçınılmalı), valproatın<br />
+  enzim etkileri, statin-CYP etkileşimleri.</li>
+<li><strong>ERCC5 P19L VUS (VAF %78)</strong> germline-analiz eşiğinde yer alıyor — germline durumunun<br />
+  doğrulanması değerli olacaktır, çünkü nükleotid-eksizyon-tamir genleri platin/alkilleyici<br />
+  işlenmesini etkileyebilir.</li>
+<li><strong>Sıralama ve zamanlama</strong>, ilaç seçimi kadar önemlidir (örn. checkpoint-inhibitör<br />
+  zamanlamasının radyoterapiye göre ayarlanması).</li>
+</ul>
+<hr />
+<hr />
+<h2>7. Literatür kanıt katmanı (OpenAlex üzerinden doğrulanmış, birincil GBM referansları)</h2>
+<p>Her aday ilaç, GBM bağlamındaki en iyi klinik veya mekanistik referansına bağlanmıştır. Kanıt <em>derecesi</em>, varlığı kadar önemlidir — randomize negatif bir çalışma, umut verici bir preklinik sinyalden daha ağır basar.</p>
+<table>
+<thead>
+<tr>
+<th>İlaç</th>
+<th>En iyi GBM referansı</th>
+<th>Yıl</th>
+<th>Kanıt derecesi</th>
+<th>Bulgu / not</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paxalisib</td>
+<td><a href="https://doi.org/10.1200/jco.2022.40.16_suppl.2047">Wen et al., paxalisib in newly diagnosed GBM, unmeth</a></td>
+<td>2022</td>
+<td>Klinik (Faz 2, ASCO)</td>
+<td>Beyne nüfuz edebilen PI3K/mTOR inhibitörü; Rejim B/C dayanağının arkasındaki temel GBM programı.</td>
+</tr>
+<tr>
+<td>Metformin</td>
+<td><a href="https://doi.org/10.5966/sctm.2012-0058">Sato et al., Glioma-initiating cell elimination by m</a></td>
+<td>2012</td>
+<td>Preklinik mekanizma</td>
+<td>Metformin, AMPK-FOXO3 yoluyla glioma kök hücrelerini tüketir.</td>
+</tr>
+<tr>
+<td>Metformin</td>
+<td><a href="https://doi.org/10.1371/journal.pone.0123721">Metformin inhibits growth of human GBM cells &amp; enhan</a></td>
+<td>2015</td>
+<td>Preklinik</td>
+<td>Metformini GBM'de kemo/RT duyarlılaştırıcısı olarak destekler.</td>
+</tr>
+<tr>
+<td>Disülfiram+Cu <strong>⚠ NEGATİF</strong></td>
+<td><a href="https://doi.org/10.1001/jamanetworkopen.2023.4149">DIRECT: Disulfiram+Copper + chemo vs chemo alone in </a></td>
+<td>2023</td>
+<td>Klinik (Randomize, JAMA Netw Open)</td>
+<td>ANAHTAR NEGATİF SONUÇ: DIRECT randomize çalışması (n=88, nüks GBM) — kemoterapiye eklenen disülfiram+Cu, 6 aylık sağkalımı anlamlı ölçüde iyileştirmedi.</td>
+</tr>
+<tr>
+<td>Disülfiram+Cu</td>
+<td><a href="https://doi.org/10.3390/cells9020469">Skrott et al. mechanism — disulfiram/Cu targets NPL4</a></td>
+<td>2020</td>
+<td>Preklinik mekanizma</td>
+<td>Moleküler temel: Cu-DDC, NPL4'ü agrege eder -&gt; proteotoksik stres.</td>
+</tr>
+<tr>
+<td>Klorokin/HCQ</td>
+<td><a href="https://doi.org/10.4161/auto.28984">Phase I/II hydroxychloroquine + RT/TMZ in newly diag</a></td>
+<td>2014</td>
+<td>Klinik (Faz I/II)</td>
+<td>Otofaji inhibisyonu; kemoradyoterapi ile tolere edilebilir HCQ dozu belirlendi (doz-sınırlayıcı toksisite gözlendi).</td>
+</tr>
+<tr>
+<td>Atorvastatin</td>
+<td><a href="https://doi.org/10.1038/bjc.2014.431">Anticancer effects of mevalonate-pathway modulation </a></td>
+<td>2014</td>
+<td>Preklinik</td>
+<td>Gliomda statin/mevalonat blokajı gerekçesi.</td>
+</tr>
+<tr>
+<td>Selekoksib</td>
+<td><a href="https://doi.org/10.18632/oncotarget.2408">CUSP9* protocol for recurrent GBM (celecoxib is a co</a></td>
+<td>2014</td>
+<td>Protokol / gerekçe</td>
+<td>Selekoksib, çok-hedefli CUSP9 tasarımındaki 9 yeniden konumlandırılmış ilaçtan biri olarak.</td>
+</tr>
+<tr>
+<td>Mebendazol</td>
+<td><a href="https://doi.org/10.1093/neuonc/nor077">Antiparasitic mebendazole shows survival benefit in </a></td>
+<td>2011</td>
+<td>Preklinik</td>
+<td>Klinik ilgiyi başlatan temel GBM etkinlik sinyali (JHU).</td>
+</tr>
+<tr>
+<td>Valproik asit</td>
+<td><a href="https://doi.org/10.1158/1078-0432.ccr-08-0643">Postradiation sensitization by HDAC inhibitor valpro</a></td>
+<td>2008</td>
+<td>Preklinik (radyoduyarlılaştırma)</td>
+<td>HDAC-i radyoduyarlılaştırma; sonraki klinik GBM verileri karışık — dikkatli yorumlanmalı.</td>
+</tr>
+<tr>
+<td>Adavosertib(WEE1)</td>
+<td><a href="https://doi.org/10.1093/noajnl/vdac073">WEE1 inhibitor adavosertib with radiation in diffuse</a></td>
+<td>2022</td>
+<td>Klinik (erken faz)</td>
+<td>Gliomda WEE1 abrogasyonu + RT; p53-null sentetik-letal handle uygulamada.</td>
+</tr>
+<tr>
+<td>ATR inhibitörü</td>
+<td><a href="https://doi.org/10.1093/noajnl/vdab015">DNA damage response inhibitors (ATR-CHK1-WEE1) for g</a></td>
+<td>2021</td>
+<td>Derleme (mekanizma/klinik durum)</td>
+<td>p53 kaybından ve telomer stresinden kaynaklanan replikasyon stresine karşı ATR inhibisyonunu çerçeveler.</td>
+</tr>
+<tr>
+<td>6-tio-dG</td>
+<td><a href="https://doi.org/10.1186/s13073-016-0324-x">Telomerase-targeted strategies incl. 6-thio-dG (telo</a></td>
+<td>2016</td>
+<td>Derleme / mekanizma</td>
+<td>TERT+ durumunu hedeflemenin gerekçesi; 6-tio-dG deneyseldir, eczaneden temin edilemez.</td>
+</tr>
+<tr>
+<td>CUSP9 protokolü</td>
+<td><a href="https://doi.org/10.18632/oncotarget.969">Kast et al., conceptual multi-drug 'Coordinated Unde</a></td>
+<td>2013</td>
+<td>Kavram / gerekçe</td>
+<td>Sizin izlediğiniz tüm-zayıflıkları-aynı-anda-hedefleme stratejisinin orijinal çerçevesi.</td>
+</tr>
+<tr>
+<td>CUSP9 protokolü</td>
+<td><a href="https://doi.org/10.1007/s00432-019-02920-4">Efficacy of coordinated pharmacological blockade in </a></td>
+<td>2019</td>
+<td>Preklinik doğrulama</td>
+<td>Birleşik blokajın GBM kök hücrelerini etkilediğine dair preklinik destek.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. Bunun neden tek seferlik değil bir <em>sistem</em> olduğu</h2>
+<p>Bu dosyada yer alan dosyalar makine tarafından okunabilir ve yeniden çalıştırılabilir:<br />
+- <code>vulnerability_map.json</code> — tümörün zayıflıkları ve bunların hedeflenebilir düğümleri<br />
+- <code>drug_candidates.json</code> — zayıflıklar + kan-beyin bariyeri + erişilebilirlikle eşleştirilmiş aday ilaçlar<br />
+- <code>candidate_regimens.json</code> — emsal çalışmalarla birlikte kombinasyon rejimleri<br />
+- <code>combination_engine.py</code> — kapsamı yeniden puanlar, boşlukları işaretler ve canlı kanıtı yeniden sorgular<br />
+- <code>coverage_matrix.png</code> — ilaç × zayıflık görseli</p>
+<p>Herhangi bir yeni sonuçtan sonra (yeni mutasyon, yeni çalışma, erişilemez hale gelen bir ilaç)<br />
+motorun yeniden çalıştırılması, sıralanmış rejimleri ve kanıt bağlantılarını yeniden üretir. <strong>Sonraki<br />
+iterasyonlar</strong> şunları yapabilir: (1) ChEMBL'den ADMET/kan-beyin bariyeri niceliklendirmesi ekleme, (2) uygunluğu kontrol etmek için<br />
+belirli aktif çalışmaların tam uygunluk kriterlerini çekme, (3) ilaç-ilaç etkileşim puanlaması ekleme, (4) yeniden konumlandırma<br />
+kütüphanesini genişletme (örn. CUSP9 setinin tamamı).</p>
+</body></html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>İlaçlarda Doz Hesabı — Yöntem ve Mantık</title>
+<style>
+:root{--fg:#1a1a2e;--muted:#555;--accent:#2c5f8a;--border:#d8dee8;--bg:#fff;--code:#f4f6fa}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+line-height:1.55;color:var(--fg);max-width:960px;margin:0 auto;padding:0 20px 80px;font-size:16.5px;background:var(--bg)}
+.backbar{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);
+border-bottom:1px solid var(--border);padding:12px 0;margin-bottom:24px;z-index:10}
+.backbtn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+padding:8px 16px;border-radius:8px;font-size:14.5px;font-weight:600;border:none;cursor:pointer}
+.home{margin-left:10px;color:var(--accent);text-decoration:none;font-size:14px}
+h1{font-size:26px;line-height:1.25;border-bottom:2px solid var(--accent);padding-bottom:10px;margin-top:6px}
+h2{font-size:21px;margin-top:34px;color:var(--accent)}
+h3{font-size:17.5px;margin-top:26px}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:13.5px}
+th,td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--code);font-weight:600}
+tr:nth-child(even) td{background:#fafbfd}
+code{background:var(--code);padding:2px 6px;border-radius:4px;font-size:0.88em}
+pre{background:var(--code);padding:14px;border-radius:8px;overflow-x:auto}
+blockquote{border-left:4px solid var(--accent);margin:16px 0;padding:8px 18px;background:#f6f9fc;color:var(--muted)}
+img{max-width:100%;height:auto;border:1px solid var(--border);border-radius:8px;margin:16px 0}
+a{color:var(--accent)}
+hr{border:none;border-top:1px solid var(--border);margin:28px 0}
+</style></head><body>
+<div class="backbar"><a href="#" class="backbtn" onclick="history.back();return false;">‹‹ Geri Dön</a><a href="index.html" class="home">Ana sayfa (Strateji)</a></div>
+<h1>İlaçlarda Doz Hesabı — Yöntem ve Mantık</h1>
+<p><em>Kapsam: <code>dose_estimates/</code> klasöründeki tüm ilaçlar — hem repurposing ilaçlar (doz-boşluk<br />
+analizi) hem klinik dozu tanımlı onkoloji/deneme/destek ilaçları (doz/rol notu). Ayrım<br />
+aşağıda "İki dosya tipi" bölümünde.</em></p>
+<h2>Neden "kan-beyin bariyerini geçiyor" yeterli değil</h2>
+<p>Bir ilacın etkili olması için üç eşiğin de aşılması gerekir:</p>
+<ol>
+<li><strong>Kan-beyin bariyerini geçmek</strong> (BBB penetrasyonu) — gerekli ama yeterli değil.</li>
+<li><strong>Tümör hücresinde serbest (bağlanmamış) konsantrasyonun</strong>, o ilacın hücreyi<br />
+   etkilediği <strong>in-vitro etkili konsantrasyona (IC50/EC50)</strong> ulaşması.</li>
+<li>Bu düzeyin <strong>tolere edilebilir bir sistemik dozla</strong> sağlanabilmesi.</li>
+</ol>
+<p>Repurposing ilaçların çoğunda kırılan halka <strong>2. eşiktir</strong>: laboratuvarda etkili olduğu<br />
+konsantrasyon, hastada güvenle ulaşılabilen beyin konsantrasyonunun çok üstündedir.</p>
+<h2>Hesabın adımları</h2>
+<p>Her ilaç için şu zinciri kuruyoruz (literatürden gerçek sayılarla):</p>
+<pre><code>(1) In-vitro etkili konsantrasyon (glioma hücrelerinde IC50/EC50)      [µM]
+(2) Standart klinik dozda plazma Cmax                                   [µM]
+(3) Protein bağlanma → SERBEST plazma konsantrasyonu = Cmax × (1-PB)    [µM]
+    (yalnızca serbest ilaç zara geçer ve etki eder)
+(4) Beyin geçiş oranı (Kp,uu veya beyin:plazma veya BOS:plazma)
+(5) Tahmini tümör SERBEST konsantrasyonu = (3) × (4)                    [µM]
+(6) BOŞLUK ORANI = (5) ÷ (1)
+       ≥ ~0.3  → etkili düzeye yaklaşır (gerçekçi)
+       « 1     → in-vitro sitotoksik düzeye ulaşılamaz
+                 (ilaç yalnızca DÜŞÜK-doz / sinerjik / modülatör rolde anlamlı)
+</code></pre>
+<h2>İki dosya tipi: hangi ilaca hangi analiz uygulanır?</h2>
+<p>Klasördeki (<code>dose_estimates/</code>) dosyalar iki tiptedir — çünkü tüm ilaçlara aynı "boşluk"<br />
+hesabı uygulanamaz:</p>
+<ul>
+<li>
+<p><strong>A) Doz-boşluk analizi</strong> — <em>repurposing ilaçlar</em> için. Bu ilaçların GBM'de onaylı bir<br />
+  "etkili doz"u yoktur; bu yüzden yukarıdaki 6-adımlı zincirle in-vitro etkili konsantrasyon<br />
+  ile tümörde ulaşılabilir konsantrasyonu karşılaştırırız. (Mebendazol, HCQ, valproik asit,<br />
+  metformin, simvastatin, atorvastatin, celecoxib, itraconazol.)</p>
+</li>
+<li>
+<p><strong>B) Doz/rol notu</strong> — <em>onaylı onkoloji, deneme veya destek ilaçları</em> için. Bunların<br />
+<strong>klinik etkinlik dozu tanımlıdır</strong> (faz çalışmalarında/etikette), yani "hücre-içi yeterli<br />
+  düzey" sorusu zaten klinik dozla yanıtlanmıştır. Bu ilaçlarda boşluk hesabı yerine<br />
+<strong>klinik doz + beyin geçişi + rol</strong> çerçevesi kullanılır. (Temozolomid, regorafenib,<br />
+  paxalisib, adavosertib/WEE1i, marizomib, dordaviprone/ONC201, bevacizumab ve iki<br />
+  antiepileptik Keppra/Lamide.)</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Özel durum — hedefi tümör hücresi içi olmayan ilaçlar:</strong> Bevacizumab (Altuzan) BBB'yi<br />
+geçmez ve etkisi damar/mikroçevre üzerindendir; bu ilaçta "hücre-içi düzey" kriteri<br />
+<strong>uygulanmaz</strong> (hedefi dolaşımdaki VEGF). Antiepileptikler (Keppra, Lamide) tümör hedefi<br />
+değildir; yalnızca destek tedavi ve etkileşim (Lamide → QT/EKG) açısından listelenir.</p>
+</blockquote>
+<p>Klasördeki tüm dosyaların dizini: <code>INDEX.md</code>.</p>
+<h2>Kritik ilke: "sitotoksik doz" ≠ "faydasız"</h2>
+<p>Boşluk oranı düşük olan bir ilaç <strong>işe yaramaz demek değildir</strong> — doğrudan tek-başına<br />
+tümör öldürücü doza ulaşamaz demektir. Birçok repurposing ilacın GBM'deki mantığı<br />
+sitotoksisite değil, <strong>düşük konsantrasyonda bile işleyen modülatör etkilerdir</strong>:</p>
+<ul>
+<li><strong>Metformin:</strong> AMPK→mTOR baskısı, OXPHOS kısıtı (metabolik duyarlılaştırma)</li>
+<li><strong>Atorvastatin:</strong> mevalonat/kolesterol kısıtı, anti-inflamatuar</li>
+<li><strong>Celecoxib:</strong> COX-2/PGE2 baskısı (mikroçevre modülasyonu — nM düzeyde sağlanır)</li>
+</ul>
+<p>Bu ilaçların değeri <strong>kombinasyon içindeki sinerji</strong> ve <strong>yolak baskısıdır</strong>, tek-başına<br />
+sitotoksisite değil. Boşluk analizi, hangi ilaçtan ne beklemek gerektiğini netleştirir.</p>
+<h2>Belirsizlik ve sınırlar</h2>
+<ul>
+<li>Sayılar <strong>literatür-tipik aralıklardır</strong>; hasta-özel farmakokinetik (böbrek/karaciğer<br />
+  fonksiyonu, ilaç etkileşimleri, P-gp aktivitesi) bunları kaydırabilir.</li>
+<li><strong>Tümör dokusu ≠ sağlıklı beyin:</strong> GBM'de BBB kısmen bozuktur (kontrast tutulumu),<br />
+  bu bazı ilaçların tümör konsantrasyonunu artırabilir — ama heterojen ve öngörülemez.</li>
+<li>Terapötik ilaç izlemi (TDM) mümkün olan ilaçlarda (valproik asit) gerçek plazma düzeyi<br />
+  ölçülebilir; çoğunda ölçülemez, tahmine dayanır.</li>
+<li>Bu belge <strong>doz hesabının bilimsel iskeletidir</strong>; kesin doz, hasta durumu ve<br />
+  etkileşimler onkolog/klinik farmakolog tarafından belirlenir.</li>
+</ul>
+<h2>A tipi — repurposing ilaç boşluk özeti</h2>
+<table>
+<thead>
+<tr>
+<th>İlaç</th>
+<th>In-vitro etkili</th>
+<th>Tümör ulaşılabilir (tahmini)</th>
+<th>Boşluk</th>
+<th>Rol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mebendazol</td>
+<td>~0.3 µM</td>
+<td>ölçülebilir beyin düzeyi</td>
+<td><strong>DAR</strong> ✓</td>
+<td>En gerçekçi doğrudan etki</td>
+</tr>
+<tr>
+<td>Hidroksiklorokin</td>
+<td>~15 µM</td>
+<td>lizozomal birikimle yaklaşır</td>
+<td><strong>SINIRDA</strong></td>
+<td>Otofaji blokajı (değişken)</td>
+</tr>
+<tr>
+<td>Valproik asit</td>
+<td>~1000 µM (HDAC)</td>
+<td>~15–70 µM serbest beyin</td>
+<td>orta</td>
+<td>Kısmi epigenetik + radyoduyarlılaştırma</td>
+</tr>
+<tr>
+<td>Simvastatin</td>
+<td>~5 µM</td>
+<td>&lt;0.05 µM serbest (atorvastatinden yüksek)</td>
+<td>geniş</td>
+<td>Mevalonat kısıtı; <strong>beyin geçişi atorvastatinden iyi</strong> → tercih</td>
+</tr>
+<tr>
+<td>İtraconazol</td>
+<td>~3 µM</td>
+<td>&lt;0.05 µM (P-gp atar)</td>
+<td>geniş</td>
+<td>Zayıf beyin geçişi + CYP3A4 yükü → çıkarıldı</td>
+</tr>
+<tr>
+<td>Celecoxib</td>
+<td>~30 µM (apoptoz)</td>
+<td>&lt;0.1 µM</td>
+<td>geniş</td>
+<td>COX-2 baskısı (nM) yeterli; sitotoksik değil</td>
+</tr>
+<tr>
+<td>Metformin</td>
+<td>~5000 µM</td>
+<td>~5–8 µM</td>
+<td>çok geniş</td>
+<td>Metabolik duyarlılaştırıcı (sinerji)</td>
+</tr>
+<tr>
+<td>Atorvastatin</td>
+<td>~5 µM</td>
+<td>&lt;0.01 µM serbest</td>
+<td>geniş</td>
+<td>⚠ Zayıf beyin geçişi → <strong>simvastatine kaydırıldı</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>B tipi — klinik dozu tanımlı ilaçlar (boşluk hesabı uygulanmaz)</h2>
+<table>
+<thead>
+<tr>
+<th>İlaç</th>
+<th>Beyin geçişi</th>
+<th>Erişim</th>
+<th>Rol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temozolomid</td>
+<td>BOS/plazma ~0.20</td>
+<td>Türkiye onkoloji</td>
+<td>V5 alkilleyici omurga; DNA-hasar zemini</td>
+</tr>
+<tr>
+<td>Regorafenib</td>
+<td>orta/sınırlı</td>
+<td>Türkiye onkoloji</td>
+<td>V3/V8; REGOMA randomize kanıtı</td>
+</tr>
+<tr>
+<td>Paxalisib</td>
+<td>ölçülmüş-iyi (beyin-penetran)</td>
+<td>deneme</td>
+<td>V3 direkt PI3K/mTOR</td>
+</tr>
+<tr>
+<td>Adavosertib (WEE1i)</td>
+<td>ölçülmüş-iyi</td>
+<td>deneme</td>
+<td>V2 p53-null sintetik-letal</td>
+</tr>
+<tr>
+<td>Marizomib</td>
+<td>ölçülmüş-iyi (beyin-geçen proteazom)</td>
+<td>deneme/yurtdışı</td>
+<td>⭐ V4/NF-κB doğrudan</td>
+</tr>
+<tr>
+<td>Dordaviprone (ONC201)</td>
+<td>ölçülmüş-iyi</td>
+<td>deneme/yurtdışı</td>
+<td>Yeni eksen; koşullu (H3K27M)</td>
+</tr>
+<tr>
+<td>Bevacizumab (Altuzan)</td>
+<td>geçmez (damar hedefi)</td>
+<td>hasta kullanıyor</td>
+<td>V7/V8; hücre-içi düzey kriteri uygulanmaz</td>
+</tr>
+<tr>
+<td>Keppra / Lamide</td>
+<td>CNS-aktif</td>
+<td>hasta kullanıyor</td>
+<td>Destek (tümör hedefi değil); Lamide → QT/EKG kısıtı</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sonuç:</strong> <em>Repurposing (A tipi)</em> ilaçlar arasında doğrudan tek-başına tümör-öldürücü doza<br />
+gerçekçi biçimde en yakın olan <strong>mebendazol</strong>; <strong>HCQ</strong> sınırda. Diğer repurposing ilaçlar<br />
+(metformin, statin, celecoxib) <strong>sinerjik/modülatör</strong> rolde değerlidir — kombinasyon mantığı<br />
+(bkz. <a href="index.html">TWO_TRACK_STRATEGY</a>) tam da bu yüzden önemlidir: tek ilaç sitotoksik düzeye ulaşamasa<br />
+da, farklı düğümlere aynı anda düşük-doz baskı uygulanır. <em>Klinik dozu tanımlı (B tipi)</em><br />
+ilaçlarda (paxalisib, marizomib, adavosertib, dordaviprone, temozolomid) "hücre-içi yeterli<br />
+düzey" sorusu zaten klinik/faz dozuyla yanıtlanmıştır; bunlarda kritik soru beyin geçişi ve<br />
+erişimdir — pano incelemesi (<a href="pano_inceleme.html">PANO_INCELEME_kanit_ve_hucre_ici_duzey</a>) bunları<br />
+"beyin-ölçülmüş-iyi + insan kanıtlı" olarak doğruladı.</p>
+</body></html>
