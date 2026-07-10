@@ -27,11 +27,17 @@ Tek başına doğrudan sitotoksik doza klinik olarak ULAŞILAMAZ. Metforminin GB
 850 mg 2×/gün → 1000 mg 2×/gün (kademeli); böbrek fonksiyonuna göre
 
 ## 6. Kaynaklar
-- Metformin GBM hücre inhibisyonu — DOI: `10.1371/journal.pone.0123721`
-- Metformin antitümoral repositioning — DOI: `10.18632/oncotarget.2617`
-- OCT taşıyıcı / beyin dağılımı — DOI: `10.1111/j.1476-5381.2011.01724.x`
+- Metformin GBM hücre inhibisyonu — DOI: [10.1371/journal.pone.0123721](https://doi.org/10.1371/journal.pone.0123721)
+- Metformin antitümoral repositioning — DOI: [10.18632/oncotarget.2617](https://doi.org/10.18632/oncotarget.2617)
+- OCT taşıyıcı / beyin dağılımı — DOI: [10.1111/j.1476-5381.2011.01724.x](https://doi.org/10.1111/j.1476-5381.2011.01724.x)
 
 ---
 *Sayılar literatür-tipik aralıklardır; hasta-özel farmakokinetik kaydırabilir. Kesin doz ve
 etkileşim değerlendirmesi onkolog/klinik farmakolog kararıdır. Tümör dokusunda kısmen bozuk
 BBB, gerçek konsantrasyonu tahminden farklı kılabilir.*
+
+
+## 6. 50 kg kadın için doz kontrolü
+- **Doz tipi:** SABİT (kiloya bağlı değil) — böbrek fonksiyonuna (eGFR) bağlı.
+- **Hesap:** Değişmez — 500 mg/gün başla, tolere edilirse 1500–2000 mg/güne titre et.
+- **Kontrol:** 50 kg'da doz kiloya göre azaltılmaz; eGFR ≥45 ise standart. Düşük kilo + böbrek bozukluğu birlikteyse laktik asidoz riski için eGFR takibi. Kara-kutu: laktik asidoz.

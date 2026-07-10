@@ -17,9 +17,16 @@ beyne geçen ilk proteazom inhibitörlerinden; beyin-ölçülmüş-iyi (pano 86.
 deneme dozu (ör. 0.8 mg/m² IV, gün 1/8/15); nörolojik izlem
 
 ## 4. Kaynaklar
-- Marizomib proteazom inhibitörü preklinik — DOI: `10.2174/156800911794519716`
+- Marizomib proteazom inhibitörü preklinik — DOI: [10.2174/156800911794519716](https://doi.org/10.2174/156800911794519716)
 
 ---
 *Kesin doz ve etkileşim değerlendirmesi onkolog/klinik farmakolog kararıdır. Hastanın
 Lamide (lakozamid) kullanımı → QT-uzatan eklemelerde EKG şartı; kombinasyon toksisitesi için
 `TOXICITY_PROFILE.md`.*
+
+
+## 5. 50 kg kadın için doz kontrolü
+- **Doz tipi:** BSA-bağımlı (mg/m²) → kiloyla otomatik ölçeklenir.
+- **BSA (50 kg, 152 cm):** ~1.45 m²
+- **Hesap:** 0.8 mg/m² × 1.45 = **~1.16 mg IV** (gün 1/8/15).
+- **Kontrol:** BSA'ya göre ölçekli — 50 kg'da mutlak doz otomatik düşük. Miyelosupresyon EKLEMEZ (avantaj). **CNS yan etkileri (ataksi, konfüzyon)** mevcut AEİ'ler (Keppra+Lamide) üzerine binebilir → nörolojik izlem. Deneme protokolü doğrular.

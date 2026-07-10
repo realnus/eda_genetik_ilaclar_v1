@@ -11,16 +11,22 @@ beyin-penetran olacak şekilde tasarlandı (GDC-0084); beyin-ölçülmüş-iyi (
 - **Tümör düzeyi:** terapötik beyin düzeyine ulaşır (preklinik + insan çalışması)
 
 ## 2. Rol ve gerekçe
-V3 (PTEN kaybı → PI3K/mTOR) için beyin-geçişli DİREKT inhibitör; deneme ilacı (GBM AGILE NCT03970447). Faz tanımlı doz kullanılır. Hiperglisemi sınıf etkisi metformin ile kısmen dengelenir.
+V3 (PTEN kaybı → PI3K/mTOR) için beyin-geçişli DİREKT inhibitör; deneme ilacı (GBM AGILE [NCT03970447](https://clinicaltrials.gov/study/NCT03970447)). Faz tanımlı doz kullanılır. Hiperglisemi sınıf etkisi metformin ile kısmen dengelenir.
 
 ## 3. Önerilen doz
 45–60 mg/gün (deneme dozu; 28 gün sonra artış); açlık kan şekeri izlemi
 
 ## 4. Kaynaklar
-- Paxalisib yeni tanı GBM ASCO — DOI: `10.1200/jco.2022.40.16_suppl.2047`
-- Adavosertib/DDR GBM — DOI: `10.1093/noajnl/vdac073`
+- Paxalisib yeni tanı GBM ASCO — DOI: [10.1200/jco.2022.40.16_suppl.2047](https://doi.org/10.1200/jco.2022.40.16_suppl.2047)
+- Adavosertib/DDR GBM — DOI: [10.1093/noajnl/vdac073](https://doi.org/10.1093/noajnl/vdac073)
 
 ---
 *Kesin doz ve etkileşim değerlendirmesi onkolog/klinik farmakolog kararıdır. Hastanın
 Lamide (lakozamid) kullanımı → QT-uzatan eklemelerde EKG şartı; kombinasyon toksisitesi için
 `TOXICITY_PROFILE.md`.*
+
+
+## 5. 50 kg kadın için doz kontrolü
+- **Doz tipi:** SABİT (deneme dozu — kiloya bağlı değil).
+- **Hesap:** Deneme protokolü belirler (45–60 mg/gün); kiloya göre ayarlanmaz.
+- **Kontrol:** Deneme dozu sabittir. Hiperglisemi (sınıf etkisi) açlık kan şekeri izlemi gerektirir; metformin ile kısmen dengelenir. **CYP3A4 etkileşimi** simvastatin düzeyini artırır (bkz. simvastatin notu).

@@ -1,17 +1,17 @@
 # İki Panonun İncelemesi — "Hem Kanıt Hem Hücre-İçi Yeterli Düzey" Filtresi
 
-**Kaynak:** Sizin başka bir projede hazırladığınız iki pano:
+**Kaynak:** Başka bir projede hazırlanan iki pano:
 `GBM Genomik Profil — Aday & Çalışma Panosu` (78 genomik aday, 227 çalışma) ve
 `GBM Repurposing — Aday Panosu` (207 ilaç; 151'i KBB-uygun, 56'sı beklemede).
 
-**Sorunuz:** Bu panolardaki etken maddeler arasında, mevcut sistemimin hedeflediği tümör
+**Soru:** Bu panolardaki etken maddeler arasında, kullanılan sistemin hedeflediği tümör
 zayıflıklarına (V1–V8) etki eden, **hem kanıt düzeyi hem de tümör hücresi içi konsantrasyonu
 yeterli** aday var mı?
 
 **Yöntem:** Her iki panoyu ayrıştırdım. Filtre iki eşikli:
 1. **KBB = "ölçülmüş–iyi"** → beyin/tümör konsantrasyonu deneysel ölçülmüş (sadece "geçer" değil).
 2. **En iyi kanıt = "İnsan çalışması / vaka"** → klinik kanıt düzeyi.
-Bu tam da doz-boşluk analizinizin ("BBB'yi geçmek yetmez, hücre içi düzey gerekir") pano
+Bu tam da doz-boşluk analizin ("BBB'yi geçmek yetmez, hücre içi düzey gerekir") pano
 karşılığıdır: pano zaten KBB-zayıf ilaçları otomatik "beklemede" tablosuna düşürmüş.
 
 ---
@@ -74,7 +74,7 @@ raporda belirtilmemiş. → Onkoloğa sorulacak: H3K27M test edildi mi?
 
 ## Sonuç ve öneri
 
-**Sorunuzun cevabı: EVET.** Panolar üç tür kazanım getiriyor:
+**Bu sorunun cevabı: EVET.** Panolar üç tür kazanım getiriyor:
 1. **Gerçek boşluk-doldurucu:** V4_NFKB için Marizomib (beyin-ölçülmüş proteazom inhibitörü) —
    sistemimin en zayıf noktasını klinik kanıtla dolduruyor.
 2. **Bağımsız doğrulama:** V2 (WEE1/ATR) ve V3 (paxalisib) seçimlerim yalnızca "var" değil,

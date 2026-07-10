@@ -1,12 +1,12 @@
 # Gereksiz Tekrar mı, Çok-Düğümlü Saldırı mı? — İlaç Örtüşme Analizi
 
-**Sorunuzun cevabı — kombinasyon onkolojisinin temel prensibi:**
+**Sorulan sorunun cevabı — kombinasyon onkolojisinin temel prensibi:**
 
 > Aynı zayıflığı birden çok ilaçla hedeflemek, ancak ilaçlar **farklı mekanizma
 > düğümlerinden** vuruyorsa değerlidir (buna "dikey/çok-düğümlü blokaj" denir — bir yolu
 > tek noktadan değil, birkaç noktadan aynı anda kapatmak kaçış yollarını azaltır). Ama iki
 > ilaç **aynı düğümü aynı şekilde** vuruyorsa, ikincisi çoğu zaman ek fayda getirmeden
-> **sadece toksisite ekler.** İşte sizin sezginiz burada doğru.
+**Sadece toksisite eklendiği belirtilmektedir.** Bu değerlendirme burada doğrudur.
 
 > **Tıbbi tavsiye değildir.** Bu, hangi ilaçların gerçekten benzersiz katkı yaptığını, hangi
 > ilaçların birbirinin yerine geçebileceğini gösteren bir *karar-destek* analizidir. Nihai
@@ -29,7 +29,7 @@ vuruyorlarsa gerçek bir çok-düğümlü saldırıdır, tekrar değildir.
 > pratikte hâlâ geçerlidir. V6'yı "artık kapsandı" saymayın: doğrudan güçlü bir Wnt/GSK3 ilacı
 > hâlâ yok. Bu, tabloda düşük öncelikli/keşifsel olarak işaretlenmiştir.
 
-**Bevacizumab örneğiniz tam da bunu gösteriyor:** hasta zaten bevacizumab kullanıyor ve bu,
+**Bevacizumab örneği tam da bunu göstermektedir:** hasta zaten bevacizumab kullanmaktadır ve bu,
 V7/V8'in **VEGF/damar** düğümünü kapsıyor. Ama V7'nin OXPHOS düğümü (metformin), mevalonat
 düğümü (statin), otofaji düğümü (HCQ) **hâlâ boş** — yani V7'yi "tekrar hedeflemek" değil,
 V7'nin *farklı düğümlerini* kapatmaktır. Bu gereksiz değildir.
@@ -56,7 +56,7 @@ kapatır.**
 
 ---
 
-## 3. İtraconazol: sizin işaret ettiğiniz asıl vaka
+## 3. İtraconazol: işaret edilen asıl vaka
 
 İtraconazolün dokunduğu **her** düğüm başka bir ilaçça zaten kapsanıyor:
 - **Otofaji düğümü** → zaten **hidroksiklorokin** var (daha kanıtlı otofaji inhibitörü).
@@ -68,11 +68,11 @@ olarak işaretlenmişti).
 
 **Sonuç:** itraconazol, fayda/zarar dengesi en zayıf ilaçtır — çünkü kattığı her mekanizma
 zaten kapsanıyorken, en yüksek etkileşim riskini ekliyor. **Çıkarılması veya en sona
-bırakılması** en mantıklı adaydır. Sizin sezginiz doğru.
+bırakılması** en mantıklı adaydır. Bu değerlendirme doğrudur.
 
 ---
 
-## 4. Önerilen alt-strateji yapısı (sorduğunuz gibi)
+## 4. Önerilen alt-strateji yapısı (belirtildiği şekilde)
 
 Her ana strateji, **düğüm-başına-tek-ilaç** ilkesiyle sadeleştirilmiş alt-stratejilere ayrılır:
 

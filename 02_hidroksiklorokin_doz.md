@@ -27,10 +27,17 @@ Tek repurposing ilaçlar içinde tümör düzeyine en 'yaklaşabilen'lerden — 
 Hidroksiklorokin 200–400 mg 2×/gün (faz I GBM'de 600 mg'a kadar denendi)
 
 ## 6. Kaynaklar
-- HCQ + kemoradyoterapi faz I/II GBM — DOI: `10.4161/auto.28984`
-- Otofaji kanserde terapötik — DOI: `10.1158/1535-7163.mct-11-0047`
+- HCQ + kemoradyoterapi faz I/II GBM — DOI: [10.4161/auto.28984](https://doi.org/10.4161/auto.28984)
+- Otofaji kanserde terapötik — DOI: [10.1158/1535-7163.mct-11-0047](https://doi.org/10.1158/1535-7163.mct-11-0047)
 
 ---
 *Sayılar literatür-tipik aralıklardır; hasta-özel farmakokinetik kaydırabilir. Kesin doz ve
 etkileşim değerlendirmesi onkolog/klinik farmakolog kararıdır. Tümör dokusunda kısmen bozuk
 BBB, gerçek konsantrasyonu tahminden farklı kılabilir.*
+
+
+## 6. 50 kg kadın için doz kontrolü — ⚠ KRİTİK (kiloya bağlı tavan)
+- **Doz tipi:** KİLOYA BAĞLI — retinopati güvenliği gerçek vücut ağırlığına göre sınırlanır.
+- **Güvenli tavan:** ≤5 mg/kg/gün (gerçek vücut ağırlığı) → 50 kg × 5 = **≤250 mg/gün**.
+- **Hesap:** 200 mg/gün (standart tablet) 50 kg'da 4 mg/kg = güvenli aralıkta. **400 mg/gün ise 8 mg/kg = AŞIRI → retinopati riski belirgin artar, KULLANMA.**
+- **Kontrol:** 50 kg için **200 mg/gün'ü aşma**. Bazal + yıllık göz muayenesi (OCT/görme alanı). QT: Lamide/lakozamid ile birlikte bazal + takip EKG. Bu, kombinasyondaki en net kiloya-bağlı doz kısıtıdır.

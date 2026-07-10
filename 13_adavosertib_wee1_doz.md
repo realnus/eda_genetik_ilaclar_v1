@@ -17,10 +17,16 @@ V2 (truncal p53 kaybı) için sintetik-letal: G2/M kontrol noktasını kaldırı
 deneme dozu (ör. 175–300 mg, DNA-hasar kaynağı etrafında zamanlı, aralıklı); sık CBC
 
 ## 4. Kaynaklar
-- WEE1 gatekeeper GBM Cancer Cell — DOI: `10.1016/j.ccr.2010.08.011`
-- Adavosertib+RT glioma — DOI: `10.1093/noajnl/vdac073`
+- WEE1 gatekeeper GBM Cancer Cell — DOI: [10.1016/j.ccr.2010.08.011](https://doi.org/10.1016/j.ccr.2010.08.011)
+- Adavosertib+RT glioma — DOI: [10.1093/noajnl/vdac073](https://doi.org/10.1093/noajnl/vdac073)
 
 ---
 *Kesin doz ve etkileşim değerlendirmesi onkolog/klinik farmakolog kararıdır. Hastanın
 Lamide (lakozamid) kullanımı → QT-uzatan eklemelerde EKG şartı; kombinasyon toksisitesi için
 `TOXICITY_PROFILE.md`.*
+
+
+## 5. 50 kg kadın için doz kontrolü
+- **Doz tipi:** SABİT (deneme dozu, mg cinsinden — kiloya bağlı değil).
+- **Hesap:** Deneme protokolü belirler (ör. 175–300 mg, DNA-hasar kaynağı etrafında aralıklı).
+- **Kontrol:** Deneme dozu sabittir. **Asıl sınırlayıcı: temozolomid ile kemik iliği baskılanması çakışması** (kilo değil) → aralıklı doz, sık tam kan sayımı. Düşük kütlede sitopeni daha belirgin olabilir → CBC takibi sıklaştır.
