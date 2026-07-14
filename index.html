@@ -1,5 +1,4 @@
-<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>İki-Yollu Tedavi Stratejisi — Rekürren GBM (IDH-yabanıl tip, RTK1)</title>
-<style>
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>İki-Yollu Tedavi Stratejisi — Rekürren GBM (IDH-yabanıl tip, RTK1)</title><style>
 :root{--fg:#1a1a2e;--muted:#555;--accent:#2c5f8a;--border:#d8dee8;--bg:#fff;--code:#f4f6fa}
 *{box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.55;color:var(--fg);max-width:960px;margin:0 auto;padding:0 20px 80px;font-size:16.5px;background:var(--bg)}
@@ -22,7 +21,7 @@ hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 </style></head><body>
 
 <blockquote>
-<p><strong>Sürüm:</strong> v1.4 &nbsp;·&nbsp; <strong>Son güncelleme:</strong> 2026-07-10 16:45 (TR saati)</p>
+<p><strong>Sürüm:</strong> v1.9 &nbsp;·&nbsp; <strong>Son güncelleme:</strong> 2026-07-13 22:42 (TR saati)</p>
 <p><em>Her güncellemede sürüm numarası artırılır; tarih yenilenir.</em></p>
 </blockquote>
 <h1>İki-Yollu Tedavi Stratejisi — Rekürren GBM (IDH-yabanıl tip, RTK1)</h1>
@@ -63,7 +62,7 @@ hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 </tr>
 <tr>
 <td><code>[onkoloji · off-label]</code></td>
-<td>Başka kanserde onaylı onkoloji ilacı, <strong>GBM'de off-label</strong> (Regorafenib — GBM'de REGOMA faz-2 verisi)</td>
+<td>Başka kanserde onaylı onkoloji ilacı, <strong>GBM'de off-label</strong> (Regorafenib — REGOMA faz-2 pozitif, GBM AGILE faz-3 doğrulayamadı)</td>
 </tr>
 <tr>
 <td><code>[deneme]</code></td>
@@ -203,7 +202,7 @@ hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 <td><strong>5</strong></td>
 <td><strong>Regorafenib</strong> <code>[onkoloji · off-label]</code></td>
 <td>V3 + V8 (multikinaz)</td>
-<td>En güçlü erişilebilir-onkoloji kanıtı (REGOMA randomize) — ama <strong>en yüksek toksisite</strong>: karaciğer (kara kutu) + Altuzan ile hipertansiyon istifi</td>
+<td>REGOMA faz II pozitif ama GBM AGILE faz III doğrulayamadı (NCCN'den çıkarıldı) — ama <strong>en yüksek toksisite</strong>: karaciğer (kara kutu) + Altuzan ile hipertansiyon istifi</td>
 <td><strong>← burası tam K3</strong></td>
 </tr>
 </tbody>
@@ -217,7 +216,7 @@ hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 - <strong>Mavi çubuk = tek ilaç (benzersiz düğüm)</strong> — gerçek katkı. Örn. V7 içinde <strong>Bevacizumab (damar)</strong>, <strong>Metformin (OXPHOS/mitokondri)</strong> ve <strong>Atorvastatin (mevalonat/lipid)</strong> üç <em>ayrı</em> düğümdedir → gereksiz tekrar değil, tümörü aynı anda damardan, enerjiden ve yapı-taşından sıkıştırmak.<br />
 - <strong>Kırmızı çubuk = aynı düğümde 2+ ilaç (çakışma)</strong> — dikkat gereken tekrar. Haritadaki iki kırmızı satırın ikisinde de <strong>İtraconazol</strong> var (otofaji düğümünde HCQ ile, damar düğümünde Bevacizumab ile çakışıyor). Açtığı her düğüm zaten kapalı olduğu ve en ağır CYP3A4 + QT yükünü getirdiği için <strong>itraconazol kombinasyonlardan çıkarıldı</strong>.<br />
 - <strong>★ = hasta zaten kullanıyor</strong> (Bevacizumab/Altuzan).<br />
-- <strong>V4/NF-κB'de yükseltme:</strong> artık <em>doğrudan</em> proteazom düğümü (Marizomib) var — önceden yalnızca HCQ'nun <em>dolaylı</em> etkisi vardı.</p>
+- <strong>V4/NF-κB'de mekanistik ek:</strong> V4'ü <em>doğrudan</em> vuran tek beyin-geçen aday Marizomib (proteazom); ancak faz III'te klinik fayda göstermedi (bkz. K5 kartı) → <strong>mekanistik hipotez</strong>, kanıtlı üstünlük değil. HCQ yalnızca <em>dolaylı</em> etkiler.</p>
 <p>Tam düğüm-düzeyi analiz <a href="redundancy_analysis.html">REDUNDANCY_ANALYSIS</a> dosyasındadır.</p>
 <hr />
 <h2>Kombinasyon detayları (K3 başlangıç · K4/K5 deneme yükseltmeleri)</h2>
@@ -225,7 +224,7 @@ hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 <p>Aşağıda üç kombinasyon <strong>kendi içinde tam</strong> olarak veriliyor — her biri mevcut üç ilacı (Altuzan/Keppra/Lamide) tekrar gösterir:<br />
 - <strong>K3</strong> = hızlı omurganın tam hâli (deneme gerekmez) — <strong>başlangıç noktası</strong>.<br />
 - <strong>K4</strong> = K3 zeminine deneme sintetik-letal çekirdeği (paxalisib + WEE1i).<br />
-- <strong>K5</strong> = kanıt + beyin-konsantrasyonu optimize (V4'ü doğrudan Marizomib ile vurur, statin atorvastatin).</p>
+- <strong>K5</strong> = beyin-konsantrasyonu optimize (V4'ü mekanistik olarak Marizomib ile hedefler — klinik fayda kanıtlanmamış, bkz. K5 kartı; statin atorvastatin).</p>
 <blockquote>
 <p><strong>En önemli kısıt:</strong> Lamide (lakozamid) kardiyak iletimi etkiler → QT-uzatan bir ilaç (hidroksiklorokin) eklenirse <strong>bazal + takip EKG şart</strong> (FDA lakozamid etiketi). Üçüncü bir antiepileptik olan valproik asit geri planda tutuldu.</p>
 </blockquote>
@@ -343,12 +342,12 @@ hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 </tr>
 <tr>
 <td><strong>Regorafenib</strong> <code>[onkoloji · off-label]</code></td>
-<td>V3 (multikinaz) + V8 (anti-anjiyogenez) — REGOMA randomize kanıtı — kaynak: <a href="https://doi.org/10.1016/s1470-2045(18)30675-2" target="_blank" rel="noopener noreferrer">Lombardi 2019 (REGOMA)</a></td>
+<td>V3 (multikinaz) + V8 (anti-anjiyogenez) — REGOMA faz II'de lomustine karşı OS avantajı gösterdi, <strong>ancak doğrulama denemesi GBM AGILE faz III'te başarısız oldu</strong>: nüks glioblastomda OS iyileşmesi yok (HR 1,07; NDU HR 1,05), toksisite arttı → <strong>regorafenib nüks hastalık için NCCN kılavuzlarından çıkarıldı</strong> (<a href="https://doi.org/10.1200/JCO-25-01137" target="_blank" rel="noopener noreferrer">GBM AGILE, JCO 2026</a>, <a href="https://clinicaltrials.gov/study/NCT03970447" target="_blank" rel="noopener noreferrer">NCT03970447</a>). REGOMA faz II: <a href="https://doi.org/10.1016/s1470-2045(18)30675-2" target="_blank" rel="noopener noreferrer">Lombardi 2019</a></td>
 <td><strong>Hepatotoksisite (kara kutu)</strong>, hipertansiyon (Altuzan ile istiflenir), el-ayak sendromu, GİS</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Bu kombinasyonun toksisite tablosu:</strong> dört ilaçlık hızlı çekirdeğe (İrinotekan + Metformin + Atorvastatin + Hidroksiklorokin; yedek TMZ/lomustin) <strong>Regorafenib</strong> <code>[onkoloji · off-label]</code> eklenir (V3 multikinaz, REGOMA randomize kanıtı). <strong>İki yeni risk istiflenir:</strong> (1) <strong>karaciğer</strong> — Regorafenib kara kutu hepatotoksisite + atorvastatin → karaciğer testleri sık; (2) <strong>hipertansiyon</strong> — Regorafenib + mevcut <strong>Altuzan (bevacizumab)</strong> <code>[onkoloji]</code> kan basıncını üst üste bindirir. Hidroksiklorokin QT'si + Lamide nedeniyle <strong>EKG</strong> yine şart. Zayıflık kapsamı Regorafenibsiz hâle göre artmaz — ek fayda multikinaz gücünde, ek maliyet toksisitede.</p>
+<p><strong>Bu kombinasyonun toksisite tablosu:</strong> dört ilaçlık hızlı çekirdeğe (İrinotekan + Metformin + Atorvastatin + Hidroksiklorokin; yedek TMZ/lomustin) <strong>Regorafenib</strong> <code>[onkoloji · off-label]</code> eklenir (V3 multikinaz; REGOMA faz II pozitif, GBM AGILE faz III doğrulayamadı). <strong>İki yeni risk istiflenir:</strong> (1) <strong>karaciğer</strong> — Regorafenib kara kutu hepatotoksisite + atorvastatin → karaciğer testleri sık; (2) <strong>hipertansiyon</strong> — Regorafenib + mevcut <strong>Altuzan (bevacizumab)</strong> <code>[onkoloji]</code> kan basıncını üst üste bindirir. Hidroksiklorokin QT'si + Lamide nedeniyle <strong>EKG</strong> yine şart. Zayıflık kapsamı Regorafenibsiz hâle göre artmaz — ek fayda multikinaz gücünde, ek maliyet toksisitede.</p>
 <h3>K4 — Deneme eklenmiş (sintetik-letal çekirdek)</h3>
 <p><strong>Kapsam:</strong> 5/8 zayıflık (V2, V3, V4, V7, V8) — V5/MGMT biyobelirteçtir, irinotekan omurgası bu ekseni gerektirmez + V2'ye TEMİZ vuruş · <strong>Toplam toksisite skoru:</strong> 27 · Deneme ilaçları erişilebilirse en güçlü V2 hedeflemesi.</p>
 <blockquote>
@@ -410,7 +409,7 @@ hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 </tr>
 <tr>
 <td><strong>Paxalisib</strong> <code>[deneme]</code></td>
-<td>V3 (PI3K/mTOR — beyin-geçişli, DİREKT) — deneme ilacı — kaynak: <a href="https://doi.org/10.1200/jco.2022.40.16_suppl.2047" target="_blank" rel="noopener noreferrer">Wen 2022</a></td>
+<td>V3 (PI3K/mTOR — beyin-geçişli, DİREKT) — deneme ilacı — kaynak: <a href="https://doi.org/10.1200/jco.2022.40.16_suppl.2047" target="_blank" rel="noopener noreferrer">Wen 2022</a> <em>(GBM AGILE'da sinyal yeni-tanı metillenmemiş grupta daha güçlü, nüks kolunda zayıf; hasta nüks. PTEN R130*→PI3K/mTOR geçerli hipotez ama denemeler PTEN-seçilmiş değildi; onaylı değil, araştırma aşamasında.)</em></td>
 <td>Hiperglisemi (sınıf etkisi — Metformin ile kısmen dengelenir), mukozit, ruh hâli değişikliği</td>
 </tr>
 <tr>
@@ -424,11 +423,11 @@ hr{border:none;border-top:1px solid var(--border);margin:28px 0}
 <h3>K5 — Kanıt + beyin-konsantrasyonu optimize (PANO İNCELEMESİYLE GÜÇLENDİRİLMİŞ)</h3>
 <p><strong>Kapsam:</strong> 5/8 zayıflık (V2, V3, V4, V7, V8) — V5/MGMT biyobelirteçtir, irinotekan omurgası bu ekseni gerektirmez + V2'ye TEMİZ vuruş · <strong>V4 artık GÜÇLÜ ilaçla</strong> (dolaylı HCQ değil) · Deneme/yurtdışı erişim gerekli.</p>
 <blockquote>
-<p><strong>BNCT sonrası not:</strong> K5 de deneme WEE1i/paxalisib içerir; K4 ile aynı <strong>radyoduyarlılaştırma + sintetik-letal</strong> gerekçesi geçerlidir. K5'in ek üstünlüğü V4'ü doğrudan (Marizomib) vurması ve beyin-konsantrasyonu optimize ilaç seçimidir.</p>
+<p><strong>BNCT sonrası not:</strong> K5 de deneme WEE1i/paxalisib içerir; K4 ile aynı <strong>radyoduyarlılaştırma + sintetik-letal</strong> gerekçesi geçerlidir. K5'in farkı V4'ü mekanistik olarak (Marizomib — klinik fayda kanıtlanmamış) hedeflemesi ve beyin-konsantrasyonu optimize ilaç seçimidir.</p>
 <p><strong>Fark:</strong> <a href="pano_inceleme.html">PANO_INCELEME_kanit_ve_hucre_ici_duzey</a> çapraz-analizinde hem kanıt hem<br />
 beyin-konsantrasyonu (hücre-içi yeterli düzey) kriterini geçen adaylarla kurulmuştur. İki<br />
 kritik iyileştirme: (1) <strong>V4/NF-κB'yi HCQ'nun <em>dolaylı</em> etkisi yerine Marizomib</strong> (beyin-geçen<br />
-proteazom inhibitörü, GBM insan çalışması) ile <em>doğrudan</em> hedefler; (2) <strong>statin atorvastatin</strong><br />
+proteazom inhibitörü) ile <em>mekanistik olarak</em> hedefler — ancak marizomibin GBM faz III'ünde klinik faydası gösterilmedi (bkz. K5 kartı), bu yüzden <strong>hipotez düzeyinde</strong> bir ek; (2) <strong>statin atorvastatin</strong><br />
 (lipofilik → KBB'yi geçer; GBM'de doğrudan faz II verisi var; eczanede kolay bulunur). Marizomib <strong>miyelosupresyon EKLEMEZ</strong>, bu yüzden K4 kombinasyonundaki kemik<br />
 iliği darboğazını büyütmez.</p>
 </blockquote>
@@ -483,12 +482,12 @@ iliği darboğazını büyütmez.</p>
 </tr>
 <tr>
 <td><strong>Marizomib</strong> <code>[deneme]</code> <em>(deneme/yurtdışı)</em></td>
-<td><strong>V4 (NF-κB) — DOĞRUDAN, beyin-geçen proteazom inhibitörü</strong> (pano skor 86.7, insan çalışması) — kaynak: <a href="https://doi.org/10.2174/156800911794519716" target="_blank" rel="noopener noreferrer">Potts 2011</a></td>
+<td><strong>V4 (NF-κB) — DOĞRUDAN vuran tek beyin-geçen proteazom inhibitörü</strong> — ancak <strong>klinik fayda kanıtlanmamış</strong>: MIRAGE faz III (EORTC 1709/CCTG CE.8, <a href="https://clinicaltrials.gov/study/NCT03345095" target="_blank" rel="noopener noreferrer">NCT03345095</a>, <a href="https://doi.org/10.1093/neuonc/noae053" target="_blank" rel="noopener noreferrer">Neuro-Oncology 2024</a>): yeni tanı GBM'de standart TMZ/RT'ye marizomib eklenmesi OS'yi (17 vs 16,5 ay; HR 1,04; p=0,64) veya PFS'yi iyileştirmedi; <strong>MGMT-metillenmemiş alt grupta da fayda yok</strong> (HR 1,13; p=0,27); toksisite arttı. Bu hastada NFKBIA delesyonu → NF-κB aktif olduğundan <strong>mekanistik/biyobelirteç-seçili aday</strong> (kanıtlı üstünlük değil); preklinik köken <a href="https://doi.org/10.2174/156800911794519716" target="_blank" rel="noopener noreferrer">Potts 2011</a></td>
 <td><strong>CNS etkileri</strong> (ataksi, konfüzyon, yorgunluk) — ⚠ Keppra+Lamide üzerine binebilir, nörolojik izlem; periferik nöropati bortezomibden az</td>
 </tr>
 <tr>
 <td><strong>Paxalisib</strong> <code>[deneme]</code> <em>(deneme)</em></td>
-<td>V3 (PI3K/mTOR — beyin-geçişli, DİREKT) — kaynak: <a href="https://doi.org/10.1200/jco.2022.40.16_suppl.2047" target="_blank" rel="noopener noreferrer">Wen 2022</a></td>
+<td>V3 (PI3K/mTOR — beyin-geçişli, DİREKT) — kaynak: <a href="https://doi.org/10.1200/jco.2022.40.16_suppl.2047" target="_blank" rel="noopener noreferrer">Wen 2022</a> <em>(GBM AGILE'da sinyal yeni-tanı metillenmemiş grupta daha güçlü, nüks kolunda zayıf; hasta nüks. PTEN R130*→PI3K/mTOR geçerli hipotez ama denemeler PTEN-seçilmiş değildi; onaylı değil, araştırma aşamasında.)</em></td>
 <td>Hiperglisemi (Metformin ile dengelenir), mukozit, ruh hâli</td>
 </tr>
 <tr>
@@ -501,7 +500,7 @@ iliği darboğazını büyütmez.</p>
 <blockquote>
 <p><strong>❌ Dordaviprone (ONC201) DIŞLANDI:</strong> Hastanın <strong>H3K27M testi NEGATİF</strong> olduğu doğrulandı.<br />
 ONC201'in onaylı/güçlü kanıtlı yolu H3K27M-mutant gliomlara özgüdür; bu hasta için uygun<br />
-değildir ve bu kombinasyona dahil edilmemiştir. (İlgili panodaki yüksek skor yalnızca H3K27M-pozitif popülasyona aitti.)</p>
+değildir ve bu kombinasyona dahil edilmemiştir. Dordaviprone <strong>2025'te FDA hızlandırılmış onayı</strong> aldı — ancak <strong>yalnızca H3K27M-mutant diffüz midline gliom</strong> için (<a href="https://braintumor.org/news/first-treatment-approved-for-rare-pediatric-and-adult-brain-tumor-type-fda-grants-accelerated-approval-to-dordaviprone-modeyso/" target="_blank" rel="noopener noreferrer">braintumor.org</a>); onaylı endikasyon bu hastanın profiliyle örtüşmediğinden eleme kararı bu onayla da desteklenir. (İlgili panodaki yüksek skor yalnızca H3K27M-pozitif popülasyona aitti.)</p>
 </blockquote>
 <p><strong>Bu kombinasyonun toksisite tablosu:</strong> deneme çekirdekli K4 kombinasyonuna kıyasla iki iyileştirme — V4 artık <em>dolaylı HCQ</em> değil<br />
 <em>doğrudan Marizomib</em> ile vuruluyor (HCQ çıkarılırsa <strong>QT/retinopati yükü de düşer</strong>), ve statin<br />
@@ -535,7 +534,7 @@ Marizomib/paxalisib/WEE1i deneme veya yurtdışı; atorvastatin+metformin+irinot
 <td><strong>Metformin</strong> <code>[repurpose]</code></td>
 <td>K3/K4/K5</td>
 <td>sabit (eGFR'ye bağlı)</td>
-<td><a href="04_metformin_doz.html">Metformin doz notu</a></td>
+<td><a href="#">Metformin doz notu</a></td>
 </tr>
 <tr>
 <td><strong>Atorvastatin</strong> <code>[repurpose]</code></td>
@@ -553,25 +552,25 @@ Marizomib/paxalisib/WEE1i deneme veya yurtdışı; atorvastatin+metformin+irinot
 <td><strong>Regorafenib</strong> <code>[onkoloji · off-label]</code></td>
 <td>K3</td>
 <td>sabit (düşük kütlede azalt)</td>
-<td><a href="10_regorafenib_doz.html">Regorafenib doz notu</a></td>
+<td><a href="#">Regorafenib doz notu</a></td>
 </tr>
 <tr>
 <td><strong>Paxalisib</strong> <code>[deneme]</code></td>
 <td>K4/K5</td>
 <td>sabit (deneme)</td>
-<td><a href="12_paxalisib_doz.html">Paxalisib doz notu</a></td>
+<td><a href="#">Paxalisib doz notu</a></td>
 </tr>
 <tr>
 <td><strong>Adavosertib (WEE1i)</strong></td>
 <td>K4/K5</td>
 <td>sabit (deneme)</td>
-<td><a href="13_adavosertib_wee1_doz.html">Adavosertib (WEE1i) doz notu</a></td>
+<td><a href="#">Adavosertib (WEE1i) doz notu</a></td>
 </tr>
 <tr>
 <td><strong>Marizomib</strong> <code>[deneme]</code></td>
 <td>K5</td>
 <td>BSA (mg/m²) — ölçekli</td>
-<td><a href="15_marizomib_doz.html">Marizomib doz notu</a></td>
+<td><a href="#">Marizomib doz notu</a></td>
 </tr>
 </tbody>
 </table>
@@ -653,8 +652,8 @@ Marizomib/paxalisib/WEE1i deneme veya yurtdışı; atorvastatin+metformin+irinot
 </tr>
 <tr>
 <td><strong>Dordaviprone (ONC201)</strong></td>
-<td>Onaylı/güçlü kanıtlı yolu <strong>H3K27M-mutant</strong> gliomlara özgü; hasta <strong>H3K27M-negatif</strong> → uygun değil.</td>
-<td>Hastanın genomik profili (H3K27M negatif)</td>
+<td><strong>2025 FDA hızlandırılmış onayı</strong> yalnızca <strong>H3K27M-mutant</strong> diffüz midline gliom için; hasta <strong>H3K27M-negatif</strong> → onaylı endikasyon dışı.</td>
+<td>Hastanın genomik profili (H3K27M negatif) + FDA onay etiketi</td>
 </tr>
 </tbody>
 </table>
@@ -704,7 +703,7 @@ Marizomib/paxalisib/WEE1i deneme veya yurtdışı; atorvastatin+metformin+irinot
 <ol>
 <li><strong>PI3K/mTOR çıpasını değiştir:</strong> paxalisib yerine <strong>everolimus (off-label)</strong> — daha zayıf (daha kötü kan-beyin bariyeri geçişi, geri-besleme AKT aktivasyonu) ama şimdi elde edilebilir. Metformin üstüne AMPK tarafından mTOR baskısı ekler.</li>
 <li><strong>p53-null / DNA-hasar sinerjisini yaklaşık kur:</strong> alkilleyiciyi (metronomik TMZ veya lomustin) repurposing omurgasıyla eşle; <strong>valproik asit</strong> ve <strong>mebendazol</strong> mitotik/kromatin stresi ekler. Bu gerçek bir WEE1/ATR sintetik-letal vuruşu değildir, ama V2 ekseni üzerindeki baskıyı sürdürür.</li>
-<li><strong>Regorafenib ekle</strong> — erişilebilir hedefli-kinaz çıpası olarak (en iyi erişilebilir-onkoloji kanıtı).</li>
+<li><strong>Regorafenib ekle</strong> — erişilebilir multikinaz çıpası (REGOMA faz II pozitifti ama GBM AGILE faz III doğrulayamadı, NCCN'den çıkarıldı — mekanistik/gözlemsel-destekli seçenek).</li>
 <li><strong>Metabolik/otofaji katmanını en üst düzeyde tut</strong> (metformin + statin + HCQ + itraconazol) — erişilebilir ilaçların gerçekten güçlü olduğu yer burasıdır.</li>
 </ol>
 <p><strong>Yedek plan kapsamı:</strong> hâlâ 8'de 7 (temiz V1 TERT vuruşu hariç her şey). Hedefli sintetik-letal mekanizmanın <em>kalitesi</em> kaybedilir, ancak <strong>zaman kaybedilmez</strong> ve <strong>zayıflık genişliği kaybedilmez</strong>.</p>
@@ -738,7 +737,7 @@ Hafta 0 ──▶ STRATEJİ 2 görüşmelerini aç (denemeler)  ── tarama pa
 - Metformin — AMPK üzerinden glioma kök hücre — <a href="https://doi.org/10.5966/sctm.2012-0058" target="_blank" rel="noopener noreferrer">Sato 2012</a><br />
 - Metformin — GBM büyüme inhibisyonu — <a href="https://doi.org/10.1371/journal.pone.0123721" target="_blank" rel="noopener noreferrer">Sesen 2015</a><br />
 - Paxalisib — beyin-geçişli PI3K/mTOR inhibitörü, GBM faz-2 — <a href="https://doi.org/10.1200/jco.2022.40.16_suppl.2047" target="_blank" rel="noopener noreferrer">Wen 2022</a><br />
-- Regorafenib — multikinaz, REGOMA randomize — <a href="https://doi.org/10.1016/s1470-2045(18)30675-2" target="_blank" rel="noopener noreferrer">Lombardi 2019 (REGOMA)</a></p>
+- Regorafenib — multikinaz; REGOMA faz II <a href="https://doi.org/10.1016/s1470-2045(18)30675-2" target="_blank" rel="noopener noreferrer">Lombardi 2019</a>, doğrulama negatif <a href="https://doi.org/10.1200/JCO-25-01137" target="_blank" rel="noopener noreferrer">GBM AGILE JCO 2026</a></p>
 <p><strong>V4_NFKB — NF-κB / proteazom</strong><br />
 - Hidroksiklorokin — otofaji/lizozom, faz I/II GBM+RT — <a href="https://doi.org/10.4161/auto.28984" target="_blank" rel="noopener noreferrer">Rosenfeld 2014</a><br />
 - Marizomib — beyin-geçen proteazom inhibitörü (NF-κB dolaylı) — <a href="https://doi.org/10.2174/156800911794519716" target="_blank" rel="noopener noreferrer">Potts 2011</a></p>
@@ -752,7 +751,7 @@ Hafta 0 ──▶ STRATEJİ 2 görüşmelerini aç (denemeler)  ── tarama pa
 - Hidroksiklorokin — otofaji inhibisyonu — <a href="https://doi.org/10.4161/auto.28984" target="_blank" rel="noopener noreferrer">Rosenfeld 2014</a></p>
 <p><strong>V8_IMMUNE — anti-anjiyogenez / mikroçevre</strong><br />
 - Bevacizumab — VEGF/anti-anjiyogenez — <a href="https://doi.org/10.1200/jco.2008.19.8721" target="_blank" rel="noopener noreferrer">Friedman 2009</a><br />
-- Regorafenib — anti-anjiyogenez, REGOMA — <a href="https://doi.org/10.1016/s1470-2045(18)30675-2" target="_blank" rel="noopener noreferrer">Lombardi 2019 (REGOMA)</a></p>
+- Regorafenib — anti-anjiyogenez; GBM AGILE doğrulama negatif <a href="https://doi.org/10.1200/JCO-25-01137" target="_blank" rel="noopener noreferrer">JCO 2026</a></p>
 <p><strong>Makale-dışı / veritabanı kaynakları ve notlar</strong><br />
 - <strong>V6_WNT/TCF7L2:</strong> Bu düğüm için beyin-geçişli, klinik-aşama güçlü bir Wnt/GSK3 ilacı literatürde bulunamadı; <em>kabul edilen boşluk</em> olarak bırakıldı. Celecoxib yalnızca dolaylı/zayıf COX–Wnt etkisiyle listelenir, birincil GBM Wnt kanıtı yoktur.<br />
 - <strong>Marizomib pano skoru (86.7):</strong> <a href="pano_inceleme.html">PANO_INCELEME_kanit_ve_hucre_ici_duzey</a> çapraz-analizinden gelen bir iç-sıralama değeridir (kanıt düzeyi + beyin-konsantrasyonu birleşik skoru); birincil mekanizma kaynağı yukarıdaki Potts 2011'dir.<br />
